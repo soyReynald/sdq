@@ -1,0 +1,64 @@
+[
+
+	{
+		"numero"		:	1,
+		"url"			:	"php",
+		"titulo"		:	"Conectando a la base de datos MySQL",
+		"descripcion"	:	"Vamos a conectarnos a MySQL desde PHP.",
+		"tip"			:	"La función para conectar con MySQL desde PHP es:<pre><code class=\"language-php\">mysqli_connect($servidor, $usuario, $password, $baseDatos);</code></pre>",
+		"mandato"		:	"<ul><li>Importar la base de datos del archivo ( basedatos/datos.sql ) con el administrador de base de datos, esta tiene datos de marcas de vehículos y modelos por año</li><li>Crear una conexión a esta base de datos desde PHP en un archivo externo e incluirla en ( index.php )</li></ul>",
+		"archivos"		:	[
+								{
+									"nombre":	"index.php",
+									"codigo":	"language-php language-markup"
+								}
+							],
+		"cargar"		:	"index.php"
+	},
+	{
+		"numero"		:	2,
+		"url"			:	"php",
+		"titulo"		:	"Enviando Query desde PHP a MySQL",
+		"descripcion"	:	"Vamos a recibir datos desde MySQL.",
+		"tip"			:	"Para enviar ( Querys ) a MySQL desde PHP se hace con cualquiera de las funciones:<pre><code class=\"language-php line-numbers\">$resultados = mysqli_query($query, $conexion);\n$resultados = $conexion->query($query);</code></pre>Con cualquiera de estas funciones [ mysqli_fetch_array($resultados) ], [ mysqli_fetch_assoc($resultados) ] o [ mysqli_fetch_object($resultados) ]  podemos convertir los datos a variables de PHP.<pre><code class=\"language-php\">mysqli_fetch_array($resultados); # Array numérico\nmysqli_fetch_assoc($resultados); # Array asociativo\nmysqli_fetch_object($resultados); # Objecto</code></pre>",
+		"mandato"		:	"<ul><li>En una tabla mostrar todos los modelos que la marca Mazda manufacturó entre el 2014 y 2016</li><li>Obtener cuantos modelos diferentes obtuvo cada marca entre el 2004 y 2006</li></ul>",
+		"archivos"		:	[
+								{
+									"nombre":	"index.php",
+									"codigo":	"language-php language-markup"
+								}
+							],
+		"cargar"		:	"index.php"
+	},
+	{
+		"numero"		:	3,
+		"url"			:	"php",
+		"titulo"		:	"Editando y eliminando",
+		"descripcion"	:	"Vamos a editar y eliminar datos de MySQL desde PHP.",
+		"tip"			:	"Recuerda que para capturar variables que vienen desde formularios o la URL, necesitas utilizar las variables ( $_POST ) y ( $_GET )",
+		"mandato"		:	"<ul><li>Mostrar en una tabla las ( Marcas ) y colocar botones para editar las marcas y eliminarlas</li></ul>",
+		"archivos"		:	[
+								{
+									"nombre":	"index.php",
+									"codigo":	"language-php language-markup"
+								}
+							],
+		"cargar"		:	"index.php"
+	},
+	{
+		"numero"		: 	4,
+		"url"			: 	"php",
+		"titulo"		: 	"Las clases mysqli y mysqli_result",
+		"descripcion"	: 	"Las cosas que podemos hacer con las funciones que inician con <i>mysqli_</i>, las podemos hacer con las clases mysqli y mysqli_result.",
+		"tip"			: 	"Recuerda cuando utilizamos la función [ mysqli_connect() ], esta retorna una instancia de la clase [ mysqli ], por tanto si hacemos algo así: [ $con = mysqli_connect($server, $user, $pass, $dbase); ]. Podemos utilizar la variable [ $con ] como una instancia de dicha clase. Estos son algunos ejemplos de cómo podemos utilizarla:<ul><li>[ $con->error ] (string) Propiedad que retorna el error de MySQL.</li><li>[ $con->query($query) ] (object) Método que realiza una consulta a la base de datos.</li><li>[ $con->close() ] (boolean) Método que cierra una conexión previamente abierta a una base de datos.</li></ul>Además, cuando ejecutamos una consulta ya sea con [ mysqli_query ] o [ $con->query ], esta retorna también una instancia que hace referencia a los resultados de la consulta. Si declaramos una variable para almacenar los resultados así: [ $res = mysqli_query($consulta) ] o [ $res = $con->query($consulta) ]. Aquí algunos ejemplos de cómo podemos utilizar la instancia:<ul><li>[ $res->num_rows ] (int) Propiedad que retorna el número de filas de un resultado.</li><li>[ $res->fetch_assoc() ] (array) Método para obtener una fila de resultado como un array asociativo.</li><li>[ $res->free_result() ] (boolean) Método que libera la memoria asociada a un resultado.</li></ul>Estos son los links de referencia de la clase <a href=\"http://php.net/manual/es/class.mysqli.php\">mysqli</a> y <a href=\"http://php.net/manual/es/class.mysqli-result.php\">mysqli_result</a> para obtener los listados de propiedades y métodos de ambas clases.",
+		"mandato"		:	"<ul><li>Cambiar las prácticas anteriores a este formato</li></ul>",
+		"archivos"		: 	[
+								{
+									"nombre": "index.php",
+									"codigo": "language-php language-markup"
+								}
+							],
+		"cargar"		: 	"index.php"
+	}
+
+]

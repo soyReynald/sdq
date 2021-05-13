@@ -1,0 +1,19 @@
+[
+
+	{
+		"numero"		:	1,
+		"url"			:	"usuarios",
+		"titulo"		:	"Login de usuarios (RBAC)",
+		"descripcion"	:	"Vamos a elaborar un sistema de login de usuarios con roles. ( Role Base Access Control )",
+		"tip"			:	"Recuerda:  aquí debes utilizar todo lo aprendido hasta ahora como ( $_SESSION ) y todos los conocimientos de ( MySQL ). Para encriptar las contraseñas utiliza la función [ password_hash($password, PASSWORD_BCRYPT) ]. Para verificar la contraseña encriptada con [ password_hash ], se utiliza [ password_verify($passwordAverificar, $passwordEncriptado) ].",
+		"mandato"		:	"<ul><li>Elaborar un login de usuarios</li><li>Debes crear la estructura de datos</li><li>Las contraseñas deben estar encriptadas</li><li>Los usuarios deben tener roles</li><li>Los roles a su vez permisos</li><li>Debe tener un logout</li></ul>",
+		"archivos"		:	[
+								{
+									"nombre":	"index.php",
+									"codigo":	"language-php language-markup"
+								}
+							],
+		"cargar"		:	"index.php"
+	}
+
+]

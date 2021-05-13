@@ -1,0 +1,64 @@
+[
+
+	{
+		"numero"		:	1,
+		"url"			:	"tags",
+		"titulo"		:	"Etiquetas (tags) de PHP",
+		"descripcion"	:	"¿Cómo podemos escribir código PHP en nuestra página web?",
+		"tip"			:	"El PHP se puede escribir dentro de nuestros archivos de HTML, pero estos necesitan ser interpretados por el módulo de PHP del servidor web y para esto los archivos deben tener la extensión: ( .php ). El código PHP se coloca en el archivo dentro de unas etiquetas (tags) o delimitadores:<pre><code class=\"language-php\"><?php ... ?></code></pre>",
+		"mandato"		:	"<ul><li>Imprime el texto '&lt;h1&gt;Mi primera página web en PHP&lt;/h1&gt;' dentro del cuerpo de la página web</li><li>Coloca el texto que dice '#dfd' como propiedad de bgcolor en la etiqueta body</li><li>Coloca el texto que dice '#f00' como propiedad de text en la etiqueta body</li></ul>",
+		"archivos"		:	[
+								{
+									"nombre":	"index.php",
+									"codigo":	"language-php language-markup"
+								}
+							],
+		"cargar"		:	"index.php"
+	},
+	{
+		"numero"		:	2,
+		"url"			:	"comentarios",
+		"titulo"		:	"Comentarios en PHP",
+		"descripcion"	:	"Los comentarios en cualquier lenguaje de programación tienen muchas funciones.",
+		"tip"			:	"Los comentarios se pueden utilizar tanto para que un código no sea ejecutado como para trabajar en equipo, organizar las ideas y muchas otras cosas más.<pre><code class=\"language-php line-numbers\">// Comentarios de una sola línea\n# Comentarios de una sola línea\n/* Comentarios\nde varias\nlíneas */</code></pre>",
+		"mandato"		:	"<ul><li>Comenta el primer bloque de código</li><li>Quita los comentarios del segundo bloque de código</li></ul>",
+		"archivos"		:	[
+								{
+									"nombre":	"index.php",
+									"codigo":	"language-php language-markup"
+								}
+							],
+		"cargar"		:	"index.php"
+	},
+	{
+		"numero"		:	3,
+		"url"			:	"fin_sentencia",
+		"titulo"		:	"Fin de la sentencia",
+		"descripcion"	:	"En PHP es obligatorio terminar las sentencias o comandos.",
+		"tip"			:	"Siempre que terminemos una sentencia en PHP, debemos colocar punto y coma ( ; ). Esto es obligatorio. Usualmente cuando no colocamos este símbolo de punto y coma ( ; ) el PHP presenta un error en la siguiente línea de código.",
+		"mandato"		:	"<ul><li>Quita el error que se muestra en resultados del archivo index.php</li></ul>",
+		"archivos"		:	[
+								{
+									"nombre":	"index.php",
+									"codigo":	"language-php language-markup"
+								}
+							],
+		"cargar"		:	"index.php"
+	},
+	{
+		"numero"		:	4,
+		"url"			:	"comentarios",
+		"titulo"		:	"Constructores <i>echo</i> y <i>print</i>",
+		"descripcion"	:	"Estos comandos son los principales para imprimir, es decir para que podamos visualizar datos en la pantalla.",
+		"tip"			:	"Para imprimir en PHP podemos utilizar el comando echo y el comando print.<pre><code class=\"language-php line-numbers\">echo \"Hola\";\nprint 'Mundo';</code></pre>",
+		"mandato"		:	"<ul><li>Quita todos los comentarios</li><li>Sustituye los comandos echo por print</li></ul>",
+		"archivos"		:	[
+								{
+									"nombre":	"index.php",
+									"codigo":	"language-php language-markup"
+								}
+							],
+		"cargar"		:	"index.php"
+	}
+
+]

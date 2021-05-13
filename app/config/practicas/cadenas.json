@@ -1,0 +1,109 @@
+[
+
+	{
+		"numero"		:	1,
+		"url"			:	"textos",
+		"titulo"		:	"Contando caracteres",
+		"descripcion"	:	"Muchas veces es útil saber cuántos caracteres tiene una cadena de texto.",
+		"tip"			:	"La función [ strlen($cadena) ] se utiliza para contar caracteres en una cadena de texto.<pre><code class=\"language-php line-numbers\">echo strlen($cadena); # Podemos imprimirla directamente\n$cant = strlen($cadena); # Almacenar en una variable</code></pre>",
+		"mandato"		:	"<ul><li>Imprimir la cantidad de caracteres que tiene la cadena de texto $nombre</li></ul>",
+		"archivos"		:	[
+								{
+									"nombre":	"index.php",
+									"codigo":	"language-php language-markup"
+								}
+							],
+		"cargar"		:	"index.php"
+	},
+	{
+		"numero"		:	2,
+		"url"			:	"textos",
+		"titulo"		:	"Contando palabras",
+		"descripcion"	:	"En ocasiones también es de utilidad saber la cantidad de palabras que tiene una cadena de texto.",
+		"tip"			:	"La función [ str_word_count($cadena) ] devuelve la cantidad de palabras en una cadena de texto.<pre><code class=\"language-php line-numbers\">echo str_word_count($cadena); # Podemos imprimirla directamente\n$cant = str_word_count($cadena); # Almacenar en una variable</code></pre>",
+		"mandato"		:	"<ul><li>Imprimir la cantidad de palabras que hay en las variables $nombre y $cursos</li></ul>",
+		"archivos"		:	[
+								{
+									"nombre":	"index.php",
+									"codigo":	"language-php language-markup"
+								}
+							],
+		"cargar"		:	"index.php"
+	},
+	{
+		"numero"		:	3,
+		"url"			:	"textos",
+		"titulo"		:	"Explotando cadenas de texto",
+		"descripcion"	:	"Muchas veces necesitamos cortar una cadena de texto en partes y todos esos pedazos agruparlos en un array.",
+		"tip"			:	"Con la función [ explode($separador, $cadena) ] cortamos una cadena de texto por el ( $separador ) y los pedazos se convierten en un array que retorna la función ( explode ).",
+		"mandato"		:	"<ul><li>Convierte la cadena de texto $cursos en una array utilizando como separador el caracter coma [ \",\" ] e imprímelos mediante un loop</li></ul>",
+		"archivos"		:	[
+								{
+									"nombre":	"index.php",
+									"codigo":	"language-php language-markup"
+								}
+							],
+		"cargar"		:	"index.php"
+	},
+	{
+		"numero"		:	4,
+		"url"			:	"textos",
+		"titulo"		:	"Recortando y sustrayendo cadenas",
+		"descripcion"	:	"Estas funciones son útiles para recortar y sustraer cadenas de texto.",
+		"tip"			:	"Para recortar y sustraer caracteres o trozos de texto podemos utilizar estas funciones:<ul><li>[ ltrim($cadena) ] remueve los espacios vacíos al inicio de la cadena</li><li>[ rtrim($cadena) ] remueve los espacios vacíos al final de la cadena</li><li>[ trim($cadena) ] remueve los espacios vacíos de ambos lados de la cadena</li><li>[ substr($cadena, $inicio, $cantidad) ] sustrae una parte de la cadena donde ( $inicio ) es el caracter inicial y ( $cantidad ) es la cantidad de caracteres que queremos extraer</li></ul>",
+		"mandato"		:	"<ul><li>En la práctica anterior cuando utilizamos ( explode ) algunas palabras quedaron con espacios delante o detrás. Vamos a remover esos espacios con ( trim )</li><li>Imprimir solo la parte 'Training' de la variable $nombre utilizando ( substr )</li></ul>",
+		"archivos"		:	[
+								{
+									"nombre":	"index.php",
+									"codigo":	"language-php language-markup"
+								}
+							],
+		"cargar"		:	"index.php"
+	},
+	{
+		"numero"		:	5,
+		"url"			:	"textos",
+		"titulo"		:	"Buscando cadenas de texto",
+		"descripcion"	:	"Cuando necesitamos saber si una palabra o una porción de texto se encuentra dentro de otra.",
+		"tip"			:	"Para buscar palabras o porciones de texto dentro de cadenas de texto, podemos utilizar las funciones [ strstr($cadena, $busqueda) ] o [ strpos($cadena, $busqueda) ]. La función ( strstr ) devuelve el resto de la cadena a partir del texto encontrado, si lo encuentra y ( false ) en caso de no encontrarlo. En el caso de ( strpos ) devuelve un número si la encuentra, donde el número es la posición donde se encuentra esa palabra o porción de texto dentro de la cadena principal o ( false ) si no la encuentra.",
+		"mandato"		:	"<ul><li>Busca la palabra 'Center' en $nombre con ( strpos ) y busca la palabra 'jQuery' en $cursos con ( strstr ) y compara los resultados</li></ul>",
+		"archivos"		:	[
+								{
+									"nombre":	"index.php",
+									"codigo":	"language-php language-markup"
+								}
+							],
+		"cargar"		:	"index.php"
+	},
+	{
+		"numero"		:	6,
+		"url"			:	"textos",
+		"titulo"		:	"Reemplazando cadenas de texto",
+		"descripcion"	:	"Esto lo usaremos para sustituir palabras o cadenas de texto.",
+		"tip"			:	"Para reemplazar trozos o palabras dentro de una cadena de texto, lo hacemos con la función ( str_replace($buscar, $reemplazar, $cadena) ) donde las variables $buscar y $reemplazar pueden ser tanto ( string ) como ( array ).",
+		"mandato"		:	"<ul><li>En la variable $html reemplaza los ( ul ) por ( p ) y los ( li ) por ( a )</li></ul>",
+		"archivos"		:	[
+								{
+									"nombre":	"index.php",
+									"codigo":	"language-php language-markup"
+								}
+							],
+		"cargar"		:	"index.php"
+	},
+	{
+		"numero"		:	7,
+		"url"			:	"textos",
+		"titulo"		:	"Texto como array",
+		"descripcion"	:	"¿Qué pasaría si los textos fueran un array?",
+		"tip"			:	"Podemos tratar las cadenas de textos como si fueran ( array ), si hacemos esto ( echo $cadena[4] ). Imprimiríamos el caracter que está en la posición ( 5 ) de la cadena de texto. ¿Por qué la posición ( 5 )? Porque el array inicia en cero.",
+		"mandato"		:	"<ul><li>Imprimir las letras de $nombre de forma vertical</li></ul>",
+		"archivos"		:	[
+								{
+									"nombre":	"index.php",
+									"codigo":	"language-php language-markup"
+								}
+							],
+		"cargar"		:	"index.php"
+	}
+
+]

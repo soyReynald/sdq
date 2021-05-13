@@ -1,0 +1,142 @@
+[
+
+	{
+		"numero"		:	1,
+		"folder"		:	"sintaxis",
+		"tema"			:	"Sintaxis del lenguaje",
+		"descripcion"	:	"PHP es un lenguaje interpretado, de alto nivel y embebido en páginas HTML. Su sintaxis es similar a la de los lenguajes de C, Java, Perl."
+	},
+	{
+		"numero"		:	2,
+		"folder"		:	"variables",
+		"tema"			:	"Las variables y constantes",
+		"descripcion"	:	"Las variables son contenedores para almacenar distintos tipos de datos que se utilizarán posteriormente en nuestro código."
+	},
+	{
+		"numero"		:	3,
+		"folder"		:	"operadores",
+		"tema"			:	"Operadores",
+		"descripcion"	:	"Con los operadores podemos efectuar operaciones de distintos tipos entre variables y valores."
+	},
+	{
+		"numero"		:	4,
+		"folder"		:	"condicionales",
+		"tema"			:	"Condicionales",
+		"descripcion"	:	"Las condicionales son muy útiles cuando queremos evaluar el valor de verdad de una sentencia o subrutina."
+	},
+	{
+		"numero"		:	5,
+		"folder"		:	"iteraciones",
+		"tema"			:	"Iteraciones ( loops )",
+		"descripcion"	:	"Las iteraciones ( loops ) ejecutan un bloque de código repetidas veces hasta que se cumpla una condición o cierta cantidad de veces."
+	},
+	{
+		"numero"		:	6,
+		"folder"		:	"funciones",
+		"tema"			:	"Funciones ( métodos )",
+		"descripcion"	:	"Una función es un bloque de código que realiza una o varias acciones y que podemos utilizar varias veces sin necesidad de reescribir dicho código nuevamente."
+	},
+	{
+		"numero"		:	7,
+		"folder"		:	"cadenas",
+		"tema"			:	"Cadenas de texto",
+		"descripcion"	:	"En este tema vamos a ver algunas funciones que podemos utilizar para manipular cadenas de texto."
+	},
+	{
+		"numero"		:	8,
+		"folder"		:	"arrays",
+		"tema"			:	"Arrays ( Arreglos )",
+		"descripcion"	:	"Los arrays o arreglos son utilizados para almacenar múltiples datos con un solo nombre de variable. Vamos a ver algunas funciones que nos permiten manipular estos."
+	},
+	{
+		"numero"		:	9,
+		"folder"		:	"funciones_php",
+		"tema"			:	"Otras funciones de PHP",
+		"descripcion"	:	"El lenguaje PHP trae una vasta cantidad de funciones. Vamos a practicar con algunas de ellas."
+	},
+	{
+		"numero"		:	10,
+		"folder"		:	"post_get",
+		"tema"			:	"Variables: $_POST & $_GET",
+		"descripcion"	:	"Con estas variables podemos recibir datos de otros archivos que hayan sido enviados con los métodos post y/o get."
+	},
+	{
+		"numero"		:	11,
+		"folder"		:	"files",
+		"tema"			:	"Variable: $_FILES",
+		"descripcion"	:	"Con esta variable podemos subir archivos y controlar su destino dependiendo de su tipo y tamaño."
+	},
+	{
+		"numero"		:	12,
+		"folder"		:	"include",
+		"tema"			:	"Inclusión de archivos",
+		"descripcion"	:	"La inclusión de archivos nos permite incluir o requerir un archivo dentro de otro. Esto es muy útil cuando queremos la misma porción de código en distintos archivos."
+	},
+	{
+		"numero"		:	13,
+		"folder"		:	"xml_json",
+		"tema"			:	"XML & JSON",
+		"descripcion"	:	"Vamos a leer archivos de tipo XML ( eXtended Markup Language ) y JSON ( JavaScript Object Notation ) y utilizarlos en PHP."
+	},
+	{
+		"numero"		:	14,
+		"folder"		:	"sql",
+		"tema"			:	"MySQL",
+		"descripcion"	:	"Conocer el C.R.U.D. ( Create, Read, Update y Delete ) de MySQL."
+	},
+	{
+		"numero"		:	15,
+		"folder"		:	"mysql",
+		"tema"			:	"MySQL desde PHP",
+		"descripcion"	:	"Veremos cómo conectar PHP con el servidor de MySQL. Envio de consultas desde PHP y también obtener datos de tablas y utilizarlos en PHP."
+	},
+	{
+		"numero"		:	16,
+		"folder"		:	"agenda",
+		"tema"			:	"MySQL: Agenda",
+		"descripcion"	:	"Crearemos una aplicación de agenda, utilizando los conocimientos que hemos adquirido hasta ahora."
+	},
+	{
+		"numero"		:	17,
+		"folder"		:	"session",
+		"tema"			:	"Variables: $_SESSION & $_COOKIE",
+		"descripcion"	:	"Podemos almacenar valores en el navegador y requerirlos luego. Estas variables nos permiten crear sesiones de usuarios y guardar datos como cookies."
+	},
+	{
+		"numero"		: 	18,
+		"folder"		: 	"login",
+		"tema"			: 	"MySQL: Login de usuarios",
+		"descripcion"	: 	"En combinación con MySQL y la variable de sesión $_SESSION haremos un login de usuarios."
+	},
+	{
+		"numero"		:	19,
+		"folder"		:	"transacciones",
+		"tema"			:	"MySQL: Transacciones y <i>\"Stored Procedure\"</i>",
+		"descripcion"	:	"Vamos a ver cómo podemos utilizar transacciones y procedimientos almacenados <i>\"Stored Procedure\"</i> en MySQL desde PHP."
+	},
+	{
+		"numero"		: 	20,
+		"folder"		: 	"oop",
+		"tema"			: 	"Programación orientada a objetos",
+		"descripcion"	: 	"Cómo crear objetos en PHP, instanciarlos y luego reutilizar sus métodos y propiedades."
+	},
+	{
+		"numero"		:	21,
+		"folder"		:	"imagenes",
+		"tema"			:	"Manipulación de imágenes",
+		"descripcion"	:	"Utilización de algunas de las funciones de manipulación de imágenes que tiene PHP."
+	},
+	{
+		"numero"		:	22,
+		"folder"		:	"generar",
+		"tema"			:	"Generar archivos PDF y Excel",
+		"descripcion"	:	"Desde PHP podemos generar distintos tipos de archivos. En estas prácticas vamos a generar archivos PDF y Excel ( .xlsx )."
+	},
+	{
+		"numero"		: 	23,
+		"folder"		: 	"busqueda",
+		"tema"			: 	"Búsqueda y paginación",
+		"descripcion"	: 	"Con PHP podemos hacer búsquedas en base de datos mediante una palabra o frase. Además podemos ir mostrando grandes cantidades de resultados en secciones o páginas."
+	}
+
+]

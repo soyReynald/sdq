@@ -1,0 +1,49 @@
+[
+
+	{
+		"numero"		:	1,
+		"url"			:	"if",
+		"titulo"		:	"Condicional IF",
+		"descripcion"	:	"La condional if siempre comprueba valores de verdad.",
+		"tip"			:	"Recuerda que puedes colocar ( if ) dentro de ( if ). A esto se le llama ( if anidados ).<pre><code class=\"language-php line-numbers\">if(/* Condición */){\n# Código a ejecutar si la condición es verdadera\n}</code></pre>",
+		"mandato"		:	"<ul><li>Comprobar e imprimir un mensaje si el array $heroe y el array $temp son idénticos</li><li>Comprobar e imprimir un mensaje si la variable $x es diferente de la variable $y</li></ul>",
+		"archivos"		:	[
+								{
+									"nombre":	"index.php",
+									"codigo":	"language-php language-markup"
+								}
+							],
+		"cargar"		:	"index.php"
+	},
+	{
+		"numero"		:	2,
+		"url"			:	"else",
+		"titulo"		:	"IF, ELSEIF y ELSE",
+		"descripcion"	:	"Si la condición que está despúes del if es falsa, y tenemos elseif, continúa comprobando hasta que se ejecuta lo que está dentro de else.",
+		"tip"			:	"Con las condicionales ( if ), ( elseif ) y ( else ) podemos hacer que nuestra programación sea capaz de tomar muchas decisiones.<pre><code class=\"language-php line-numbers\">if(/* Condición A){\n# Código a ejecutar si la condición A es verdad\n} elseif(Condición B){\n# Código a ejecutar si la condición B es verdad\n} else {\n# Código a ejecutar si A y B son falsas\n}</code></pre>",
+		"mandato"		:	"<ul><li>Utilizando if, elseif y else: Comprueba que $a sea mayor que $c e imprime un mensaje, sino que $b sea menor que $c. Si no se da ninguno de los casos imprime otro mensaje.</li><li>Verifica cambiando los valores a las variables</li></ul>",
+		"archivos"		:	[
+								{
+									"nombre":	"index.php",
+									"codigo":	"language-php language-markup"
+								}
+							],
+		"cargar"		:	"index.php"
+	},
+	{
+		"numero"		:	3,
+		"url"			:	"switch",
+		"titulo"		:	"Condicional SWITCH",
+		"descripcion"	:	"Con switch podemos verificar una variable y dar múltiples salidas dependiendo del valor de dicha variable.",
+		"tip"			:	"Siempre que hacemos un ( switch ) es recomendable agregarle el caso ( default ) por si la variable no llega a tener nunca el valor de algun caso.<pre><code class=\"language-php line-numbers\">switch($variable){\ncase 1:\n# Código a ejecutar para el primer caso\nbreak;\ncase 2:\n# Código a ejecutar para el segundo caso\nbreak;\ndefault:\n# Código a ejecutar por defecto\n}</code></pre>",
+		"mandato"		:	"<ul><li>Crear un switch para evaluar la variable $data, colocarle 5 casos y un default e imprimir un mensaje para cada caso</li></ul>",
+		"archivos"		:	[
+								{
+									"nombre":	"index.php",
+									"codigo":	"language-php language-markup"
+								}
+							],
+		"cargar"		:	"index.php"
+	}
+
+]

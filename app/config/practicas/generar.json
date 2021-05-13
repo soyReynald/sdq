@@ -1,0 +1,53 @@
+[
+
+	{
+		"numero"		:	1,
+		"url"			:	"excel",
+		"titulo"		:	"Generando archivos de Excel",
+		"descripcion"	:	"Veremos como generar archivos de Excel desde PHP.",
+		"tip"			:	"Recuerda: Para generar archivos de Excel lo puedes hacer de una manera muy sencilla utilizando la función [ header() ] de PHP.<ul><li>[ header('Content-Type: application/vnd.ms-excel; charset=utf-8') ] Con esto le dices el tipo de contenido y el charset.</li><li>[ header('Content-Disposition: attachment; filename=archivo.xls') ] Con esto decimos cual va a ser el nombre del archivo de Excel que se va a generar.</li><li>Luego imprimimos una tabla exactamente como queremos el archivo de Excel.</li></ul>Para leer y generar archivos de Excel de formas más avanzadas, puedes utilizar las clases externas: [ PHPExcel o PhpSpreadsheet ]",
+		"mandato"		:	"<ul><li>Importa el archivo ( sales.sql ) este tiene una tabla llamada ( sales )</li><li>Agrupa las ventas por año y mes, súmalas y haz un botón que genere un archivo de Excel</li><li>El archivo de Excel debe tener una fila por cada ( mes ) y los ( años ) en columnas y debe totalizar todos los meses del año, como se muestra en la imagen:<br><img src='../images/excel.jpg' ></li></ul>",
+		"archivos"		:	[
+								{
+									"nombre":	"index.php",
+									"codigo":	"language-php language-markup"
+								}
+							],
+		"cargar"		:	"index.php"
+	},
+	{
+		"numero"		:	2,
+		"url"			:	"word",
+		"titulo"		:	"Generando archivos de Word",
+		"descripcion"	:	"Veremos como generar archivos de Word desde PHP.",
+		"tip"			:	"Recuerda: Para generar archivos de Word lo puedes hacer de una manera muy sencilla utilizando la función [ header() ] de PHP.<ul><li>[ header('Content-type: application/vnd.ms-word') ] Con esto le dices el tipo de contenido.</li><li>[ header('Content-Disposition: attachment; filename=archivo.doc') ] Con esto decimos cual va a ser el nombre del archivo de Word que se va a generar.</li><li>Luego imprimimos un ( HTML ) como queremos el archivo de Word, incluso con imágenes ( las imágenes deben tener la ruta absoluta ).</li></ul>Para leer y generar archivos de Word de formas más avanzadas puedes utilizar las clases externas: [ PHPWord o phpdocx ].",
+		"mandato"		:	"<ul><li>Hacer que el botón ( convertir a word ) descarge un documento de ( word ) con el Cuento ( 'Los Amos' )</li></ul>",
+		"archivos"		:	[
+								{
+									"nombre":	"index.php",
+									"codigo":	"language-php language-markup"
+								}
+							],
+		"cargar"		:	"index.php"
+	},
+	{
+		"numero"		:	3,
+		"url"			:	"pdf",
+		"titulo"		:	"Generando archivos PDF",
+		"descripcion"	:	"Veremos como generar archivos PDF desde PHP.",
+		"tip"			:	"Vamos a usar la clase FPDF que está en: [ http://www.fpdf.org/ ]. Algunos de los métodos más comunes son:<ul><li>[ AddPage() ] Agrega páginas</li><li>[ Cell() ] Crea una celda de texto</li><li>[ MultiCell() ] Crea una celda multilínea</li><li>[ Image() ] Agrega imágenes al PDF</li><li>[ SetTextColor() ] Cambia el color del texto</li><li>[ SetFontSize() ] Cambia el tamaño del texto</li><li>[ SetX() ] Mueve el cursor en x</li><li>[ SetY() ] Mueve el cursor en y</li><li>[ Output() ] Guarda o envía el archivo PDF</li></ul>",
+		"mandato"		:	"<ul><li>Utilizando la data del archivo ( data/canciones.xml ), crear un archivo pdf como el del ejemplo ( <a target='_blank' href='../practicas/22-generar/pdf/sample.pdf'>sample.pdf</a> )</li></ul>",
+		"archivos"		:	[
+								{
+									"nombre":	"index.php",
+									"codigo":	"language-php language-markup"
+								},
+								{
+									"nombre":	"data/canciones.xml",
+									"codigo":	"language-php"
+								}
+							],
+		"cargar"		:	"index.php"
+	}
+
+]

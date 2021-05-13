@@ -1,0 +1,252 @@
+[
+	{
+		"categoria"		: 	"Bebidas",
+		"productos"		:	[
+							{
+								"id"		:	542,
+								"nombre"	:	"Malta",
+								"marca"		:	"Morena",
+								"unidad"	:	"Botella",
+								"cantidad"	:	"22 onz",
+								"precio"	:	42.00,
+								"img"		:	"malta_morena.jpg"
+							},
+							{
+								"id"		:	26,
+								"nombre"	:	"Agua",
+								"marca"		:	"Crystal",
+								"unidad"	:	"Botella",
+								"cantidad"	:	"16 onz",
+								"precio"	:	8.00,
+								"img"		:	"agua_crystal.jpg"
+							},
+							{
+								"id"		:	3659,
+								"nombre"	:	"Refresco de frambuesa",
+								"marca"		:	"Country Club",
+								"unidad"	:	"Botella",
+								"cantidad"	:	"2 lt",
+								"precio"	:	68.00,
+								"img"		:	"country_frambuesa.jpg"
+							},
+							{
+								"id"		:	584,
+								"nombre"	:	"Café descafeinado",
+								"marca"		:	"Nescafe",
+								"unidad"	:	"Botella",
+								"cantidad"	:	"175 grs",
+								"precio"	:	593.00,
+								"img"		:	"nescafe.jpg"
+							},
+							{
+								"id"		:	5,
+								"nombre"	:	"Jugo Kids Cereza Estelar",
+								"marca"		:	"Santal",
+								"unidad"	:	"Caja",
+								"cantidad"	:	"200 ml",
+								"precio"	:	19.00,
+								"img"		:	"santal_cereza.jpg"
+							}
+							]
+	},
+	{
+		"categoria"		: 	"Lacteos",
+		"productos"		:	[
+							{
+								"id"		:	100,
+								"nombre"	:	"Leche en polvo entera",
+								"marca"		: 	"Milex",
+								"unidad"	:	"Funda",
+								"cantidad"	:	"2200 grs",
+								"precio"	:	1057.00,
+								"img"		:	"leche_milex.jpg"
+							},
+							{
+								"id"		:	5478,
+								"nombre"	:	"Mantequilla pasteurizada",
+								"marca"		:	"Rica",
+								"unidad"	:	"Envase plastico",
+								"cantidad"	:	"1 lb",
+								"precio"	:	187.00,
+								"img"		:	"mantequilla_rica.jpg"
+							},
+							{
+								"id"		:	369,
+								"nombre"	:	"Yogurt de frutas tropicales",
+								"marca"		:	"Yoplait",
+								"unidad"	:	"Envase plastico",
+								"cantidad"	:	"6 onz",
+								"precio"	:	38.00,
+								"img"		:	"yogurt_yoplait.jpg"
+							},
+							{
+								"id"		:	789,
+								"nombre"	:	"Leche evaporada",
+								"marca"		:	"Rica",
+								"unidad"	:	"Tetrapack",
+								"cantidad"	:	"350 ml",
+								"precio"	:	52.00,
+								"img"		:	"leche_rica.jpg"
+							},
+							{
+								"id"		:	951,
+								"nombre"	:	"Leche entera UHT",
+								"marca"		:	"Parmalat",
+								"unidad"	:	"Tetrapack",
+								"cantidad"	:	"1 lt",
+								"precio"	:	68.00,
+								"img"		:	"leche_parmalat.jpg"
+							}
+							]
+	},
+	{
+		"categoria"		: 	"Frutas",
+		"productos"		:	[
+							{
+								"id"		:	753,
+								"nombre"	:	"Mandarinas",
+								"marca"		:	"San Juan",
+								"unidad"	:	"Paquete",
+								"cantidad"	:	"1 lb",
+								"precio"	:	35.00,
+								"img"		:	"mandarinas.jpg"
+							},
+							{
+								"id"		:	147,
+								"nombre"	:	"Fresas frescas",
+								"marca"		:	"Constanza",
+								"unidad"	:	"Paquete",
+								"cantidad"	:	"1 lb",
+								"precio"	:	188.00,
+								"img"		:	"fresas.jpg"
+							},
+							{
+								"id"		:	741,
+								"nombre"	:	"Naranjas dulces",
+								"marca"		:	"Barceló",
+								"unidad"	:	"Malla",
+								"cantidad"	:	"5 lbs",
+								"precio"	:	207.00,
+								"img"		:	"naranjas.jpg"
+							},
+							{
+								"id"		:	157,
+								"nombre"	:	"Ciruelas sin semilla",
+								"marca"		:	"Ligo",
+								"unidad"	:	"Funda",
+								"cantidad"	:	"12 onz",
+								"precio"	:	220.00,
+								"img"		:	"ciruelas_ligo.jpg"
+							},
+							{
+								"id"		:	842,
+								"nombre"	:	"Tamarindo",
+								"marca"		:	"La Florencia",
+								"unidad"	:	"Paquete",
+								"cantidad"	:	"1 lb",
+								"precio"	:	51.00,
+								"img"		:	"tamarindo.jpg"
+							}
+							]
+	},
+	{
+		"categoria"		: 	"Enlatados",
+		"productos"		:	[
+							{
+								"id"		:	168,
+								"nombre"	:	"Maiz dulce",
+								"marca"		:	"La Famosa",
+								"unidad"	:	"Lata",
+								"cantidad"	:	"15 onz",
+								"precio"	:	58.00,
+								"img"		:	"maiz_lafamosa.jpg"
+							},
+							{
+								"id"		:	953,
+								"nombre"	:	"Gandules verdes",
+								"marca"		:	"Goya",
+								"unidad"	:	"Lata",
+								"cantidad"	:	"15 onz",
+								"precio"	:	52.00,
+								"img"		:	"gandules_goya.jpg"
+							},
+							{
+								"id"		:	358,
+								"nombre"	:	"Sardinas en salsa picante",
+								"marca"		:	"Brunswick",
+								"unidad"	:	"Lata",
+								"cantidad"	:	"106 grs",
+								"precio"	:	57.00,
+								"img"		:	"sardinas.jpg"
+							},
+							{
+								"id"		:	851,
+								"nombre"	:	"Atun en agua",
+								"marca"		:	"Cherry Star",
+								"unidad"	:	"Lata",
+								"cantidad"	:	"6 onz",
+								"precio"	:	89.00,
+								"img"		:	"atun.jpg"
+							},
+							{
+								"id"		:	456,
+								"nombre"	:	"Salchichas estilo vienna",
+								"marca"		:	"Jaja",
+								"unidad"	:	"Lata",
+								"cantidad"	:	"5 onz",
+								"precio"	:	33.00,
+								"img"		:	"salchichas_jaja.jpg"
+							}
+							]
+	},
+	{
+		"categoria"		: 	"Embutidos",
+		"productos"		:	[
+							{
+								"id"		:	879,
+								"nombre"	:	"Salchichas jumbo 30 unidades",
+								"marca"		:	"Emilio's",
+								"unidad"	:	"Paquete",
+								"cantidad"	:	"2.27 kgs",
+								"precio"	:	474.00,
+								"img"		:	"salchichas_emilios.jpg"
+							},
+							{
+								"id"		:	231,
+								"nombre"	:	"Tocineta rebanada",
+								"marca"		:	"Induveca",
+								"unidad"	:	"Funda",
+								"cantidad"	:	"8 onz",
+								"precio"	:	136.00,
+								"img"		:	"tocineta_induveca.jpg"
+							},
+							{
+								"id"		:	486,
+								"nombre"	:	"Salami de pavo",
+								"marca"		:	"Caserio",
+								"unidad"	:	"Paquete",
+								"cantidad"	:	"1 lb",
+								"precio"	:	125.00,
+								"img"		:	"salami_pavo.jpg"
+							},
+							{
+								"id"		:	426,
+								"nombre"	:	"Jamon cocido rebanado",
+								"marca"		:	"Caserio",
+								"unidad"	:	"Paquete",
+								"cantidad"	:	"1 lb",
+								"precio"	:	205.00,
+								"img"		:	"jamon_caserio.jpg"
+							},
+							{
+								"id"		:	652,
+								"nombre"	:	"Pastrami de pavo rebanado",
+								"marca"		:	"Butterball",
+								"unidad"	:	"Paquete",
+								"cantidad"	:	"1 lb",
+								"precio"	:	288.00,
+								"img"		:	"pastrami_pavo.jpg"
+							}
+							]
+	}
+]

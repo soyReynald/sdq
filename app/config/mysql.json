@@ -1,0 +1,6 @@
+{
+    "conexion"  :   "MySQL",
+    "server"    :   "localhost",
+    "user"      :   "root",
+    "password"  :   ""
+}

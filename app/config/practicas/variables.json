@@ -1,0 +1,79 @@
+[
+
+	{
+		"numero"		:	1,
+		"url"			:	"declarando",
+		"titulo"		:	"Declarando ( creando ) variables",
+		"descripcion"	:	"En PHP podemos almacenar muchos tipos de datos en variables.",
+		"tip"			:	"Para crear una variable en PHP siempre debemos colocar el símbolo de pesos ( $ ) delante del nombre de la variable. Las variables no deben iniciar con número. El intérprete diferencia minúsculas y mayúsculas en los nombres de variables. No podemos utilizar guión ( - ) o caracteres especiales en los nombres de las variables.<pre><code class=\"language-php\">$nombreVariable = \"Valor de la variable\";\n$otra-variable = 2018; # Nombre de variable ilegal</code></pre>",
+		"mandato"		:	"<ul><li>Crea una variable con tu nombre completo, una con tu edad y otra con un array que contenga 5 frutas</li><li>Imprime tu nombre, tu edad y la tercera fruta del array</li></ul>",
+		"archivos"		:	[
+								{
+									"nombre":	"index.php",
+									"codigo":	"language-php language-markup"
+								}
+							],
+		"cargar"		:	"index.php"
+	},
+	{
+		"numero"		:	2,
+		"url"			:	"datos",
+		"titulo"		:	"Tipos de datos",
+		"descripcion"	:	"En PHP podemos almacenar muchos tipos de datos en variables.",
+		"tip"			:	"Los tipos de datos que podemos almacenar en PHP son:<ul><li>Cadenas de texto ( string )</li><li>Números enteros ( Integer )</li><li>Números decimales ( float )</li><li>Valor de verdad ( boolean )</li><li>Arreglos ( array )</li><li>Objetos ( object )</li><li>Nulo ( NULL )</li><li>Recurso ( resource )</li></ul>",
+		"mandato"		:	"<ul><li>Quita los comentarios solo de las variables de tipo: string, integer y float e imprímelas</li></ul>",
+		"archivos"		:	[
+								{
+									"nombre":	"index.php",
+									"codigo":	"language-php language-markup"
+								}
+							],
+		"cargar"		:	"index.php"
+	},
+	{
+		"numero"		:	3,
+		"url"			:	"constantes",
+		"titulo"		:	"Constantes",
+		"descripcion"	:	"Las constantes son como las variables, con la diferencia que, una vez definidas no pueden ser cambiadas ni destruidas.",
+		"tip"			:	"Las constantes se pueden utilizar para guardar configuraciones de nuestra aplicación así como también agregarle múltiples idiomas a la misma. Las constantes no inician con signo de peso <strong>( $ )</strong>.",
+		"mandato"		:	"<ul><li>Agregar una constante nueva con el texto 'desde 2009'</li><li>Imprimir las constantes de modo que obtengamos 'SDQ Training Center desde 2009'</li></ul>",
+		"archivos"		:	[
+								{
+									"nombre":	"index.php",
+									"codigo":	"language-php language-markup"
+								}
+							],
+		"cargar"		:	"index.php"
+	},
+	{
+		"numero"		:	4,
+		"url"			:	"castear",
+		"titulo"		:	"Casteando (casting) variables",
+		"descripcion"	:	"Es posible transformar variables de un tipo a otro. Esto se llama cast.",
+		"tip"			:	"Para transformar una variable de un tipo a otro, primero tenemos que evaluar si es de utilidad hacer dicha transformación. Por ejemplo, si tengo la variable ( $precio = '14.95 pesos' ) de tipo cadena de texto ( string ) y quisiera sumarla a un flotante ( $cargo = 16.25 ), no es posible hacerlo si no se transforma ( castea ). Para hacerlo tendriamos que decir:<pre><code class=\"language-php\">$total = (float) $precio + $cargo;</code></pre>",
+		"mandato"		:	"<ul><li>Sumar correctamente las variables $precio y $cargo</li><li>Imprimir el array $lista como objeto</li></ul>",
+		"archivos"		:	[
+								{
+									"nombre":	"index.php",
+									"codigo":	"language-php language-markup"
+								}
+							],
+		"cargar"		:	"index.php"
+	},
+	{
+		"numero"		:	5,
+		"url"			:	"dump",
+		"titulo"		:	"Mostrando información de las variables",
+		"descripcion"	:	"Las funciones var_dump y print_r nos muestran información sobre las variables.",
+		"tip"			:	"Con las funciones [ var_dump($variable) ] y [ print_r($variable) ] podemos ver la información de las variables desglozada. Si las utilizamos en combinación con las etiquetas ( &lt;pre&gt; ) de HTML tenemos mejor visión de la información.<pre><code class=\"language-php line-numbers\">echo \"&lt;pre>\";\nprint_r($variable);\necho \"&lt;/pre>\";</code></pre>",
+		"mandato"		:	"<ul><li>Mostrar la información de todas las variables a continuación utilizando los 2 ( dos ) métodos por cada una y compare sus diferencias</li></ul>",
+		"archivos"		:	[
+								{
+									"nombre":	"index.php",
+									"codigo":	"language-php language-markup"
+								}
+							],
+		"cargar"		:	"index.php"
+	}
+
+]

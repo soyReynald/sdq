@@ -1,0 +1,72 @@
+[
+
+	{
+		"numero"		:	1,
+		"url"			:	"post",
+		"titulo"		:	"$_POST",
+		"descripcion"	:	"Recibiendo data enviada a través de formularios.",
+		"tip"			:	"Con el súper arreglo ( $_POST ) podemos recibir datos que han sido enviados con el método POST.",
+		"mandato"		:	"<ul><li>Nombrar correctamente los campos del formulario</li><li>Imprimir en el archivo ( resultados.php ) las variables en el lugar donde corresponde</li></ul>",
+		"archivos"		:	[
+								{
+									"nombre":	"index.php",
+									"codigo":	"language-php language-markup"
+								},
+								{
+									"nombre":	"resultados.php",
+									"codigo":	"language-php language-markup"
+								}
+							],
+		"cargar"		:	"index.php"
+	},
+	{
+		"numero"		:	2,
+		"url"			:	"get",
+		"titulo"		:	"$_GET",
+		"descripcion"	:	"Recibiendo data enviada a través de la URL.",
+		"tip"			:	"Con el súper arreglo ( $_GET ) podemos recibir datos que han sido enviados por la URL. Las variables se envían por la URL utilizando el signo de interrogación ( ? ) de la siguiente forma ( /archivo.php?variable=valor ). Si queremos enviar más de una las separamos con amperstand ( & ) así ( /archivo.php?variable=valor&variable=valor )",
+		"mandato"		:	"<ul><li>Enviar por la URL una variable con el producto haciendo un loop utilizando el array $productos del archivo ( index.php )</li><li>Recibir la variable en el archivo ( detalles.php ) e imprimir todos los detalles del producto utilizando el array $detalles</li></ul>",
+		"archivos"		:	[
+								{
+									"nombre":	"index.php",
+									"codigo":	"language-php language-markup"
+								},
+								{
+									"nombre":	"detalles.php",
+									"codigo":	"language-php language-markup"
+								}
+							],
+		"cargar"		:	"index.php"
+	},
+	{
+		"numero"		:	3,
+		"url"			:	"post_self",
+		"titulo"		:	"$_POST en el mismo archivo",
+		"descripcion"	:	"Recibiendo data enviada a través de formularios. En el mismo archivo.",
+		"tip"			:	"Recuerda que para evitar las advertencias de que una variable no existe puedes utilizar la función ( isset ) para comprobar. Para hacer referencia al mismo archivo en un form puedes imprimir la variable ( $_SERVER['PHP_SELF'] ) en el atributo action de esta forma ( action=&quot;&lt;?php echo $_SERVER['PHP_SELF'] ?&gt;&quot; ). Recuerda que debes sanear la variable con ( htmlspecialchars ) para evitar ataques Cross-site scripting ( XSS )",
+		"mandato"		:	"<ul><li>Nombrar correctamente los campos del formulario</li><li>Ocultar ( no imprimir ) la tabla de datos sino se ha llenado el formulario</li><li>Imprimir en el mismo archivo ( index.php ) las variables en el lugar donde corresponde</li></ul>",
+		"archivos"		:	[
+								{
+									"nombre":	"index.php",
+									"codigo":	"language-php language-markup"
+								}
+							],
+		"cargar"		:	"index.php"
+	},
+	{
+		"numero"		:	4,
+		"url"			:	"get_self",
+		"titulo"		:	"$_GET en el mismo archivo",
+		"descripcion"	:	"Recibiendo data enviada a través de la URL en el mismo archivo.",
+		"tip"			:	"Recuerda que para evitar las advertencias de que una variable no existe puedes utilizar la función ( isset ) para comprobar.",
+		"mandato"		:	"<ul><li>Enviar por la URL una variable con el producto haciendo un loop utilizando el array $productos del archivo ( index.php )</li><li>Ocultar ( no imprimir ) la tabla de detalles si no hay producto que mostrar</li><li>Recibir la variable en el mismo archivo ( index.php ) e imprimir todos los detalles del producto utilizando el array $detalles</li></ul>",
+		"archivos"		:	[
+								{
+									"nombre":	"index.php",
+									"codigo":	"language-php language-markup"
+								}
+							],
+		"cargar"		:	"index.php"
+	}
+
+]

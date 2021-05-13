@@ -1,0 +1,42 @@
+[
+
+	{
+		"numero"		:	1,
+		"url"			:	"files",
+		"titulo"		:	"Include",
+		"descripcion"	:	"Incluyendo archivos con include.",
+		"tip"			:	"Para incluir archivos con ( include ) o ( include_once ) de las siguientes formas:<pre><code class=\"language-php line-numbers\">include('carpeta/archivo.ext');\ninclude_once 'carpeta/archivo.ext';</code></pre>",
+		"mandato"		:	"<ul><li>Incluye el archivo ( lib/include.php ) en el archivo ( index.php ) e imprime las variables en el ( body ) del archivo ( index.php )</li></ul>",
+		"archivos"		:	[
+								{
+									"nombre":	"index.php",
+									"codigo":	"language-php language-markup"
+								},
+								{
+									"nombre":	"lib/include.php",
+									"codigo":	"language-php language-markup"
+								}
+							],
+		"cargar"		:	"index.php"
+	},
+	{
+		"numero"		:	2,
+		"url"			:	"files",
+		"titulo"		:	"Require",
+		"descripcion"	:	"Requiriendo archivos con la función require.",
+		"tip"			:	"La función para requerir archivos con ( require ) o ( require_once ) se puede escribir de varias formas:<pre><code class=\"language-php line-numbers\">require_once('carpeta/archivo.ext');\nrequire 'carpeta/archivo.ext';</code></pre>Para convertir una cadena de texto en JSON a objeto o array se hace con la función [ json_decode($cadena) ]. Cuando los archivos que incluimos o requerimos retornan valores, las funciones include y require se convierten en estos valores.",
+		"mandato"		:	"<ul><li>Require el archivo ( lib/require.php ) en el archivo ( index.php ) y convierte el retorno del archivo en array e imprímelo en el ( body ) del archivo ( index.php )</li></ul>",
+		"archivos"		:	[
+								{
+									"nombre":	"index.php",
+									"codigo":	"language-php language-markup"
+								},
+								{
+									"nombre":	"lib/require.php",
+									"codigo":	"language-php language-markup"
+								}
+							],
+		"cargar"		:	"index.php"
+	}
+
+]

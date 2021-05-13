@@ -1,0 +1,42 @@
+[
+
+	{
+		"numero"		:	1,
+		"url"			:	"cookies",
+		"titulo"		:	"$_COOKIES",
+		"descripcion"	:	"Vamos a trabajar con la variable $_COOKIE.",
+		"tip"			:	"<ul><li>Para iniciar una ( cookie ) en el navegador, lo hacemos con la función [ setcookie($nombre, $valor, $expiracion, $ruta) ]. Para colocar el tiempo de expiración se puede hacer con la función [ time() + (tiempo a agregar, usualmente en segundos) ]. Una vez utilizamos la función [ setcookie ], esto hace que el array asociativo ( $_COOKIE ) se llene con el nombre de la cookie. Luego podemos utilizar ( $_COOKIE[$nombre] ) para leerla.</li><li>Para eliminar una cookie lo hacemos con la misma función y colocamos un tiempo de expiración ( pasado ). Ej.: [ setcookie($nombre, '', time() - 3600) ]</li><li>Recuerda: con [ isset($cookie) ] podemos verificar la existencia de una cookie.</li></ul>",
+		"mandato"		:	"<ul><li>Guardar los datos del formulario en ( cookies )</li><li>Mostrar estos datos en el archivo ( cookie.php )</li><li>Crear un botón en el archivo ( cookie.php ) que elimine la cookie</li></ul>",
+		"archivos"		:	[
+								{
+									"nombre":	"index.php",
+									"codigo":	"language-php language-markup"
+								},
+								{
+									"nombre":	"cookie.php",
+									"codigo":	"language-php language-markup"
+								}
+							],
+		"cargar"		:	"index.php"
+	},
+	{
+		"numero"		:	2,
+		"url"			:	"sesiones",
+		"titulo"		:	"$_SESSION",
+		"descripcion"	:	"Vamos a trabajar con la variable $_SESSION.",
+		"tip"			:	"<ul><li>Para iniciar la variable de sesión ( $_SESSION ) lo hacemos con la función [ session_start() ]</li><li>Luego se puede utilizar la variable [ $_SESSION['nombre'] = $valor ], el nombre puede ser cualquier ( string )</li><li>[ session_unset() ] Remueve todas las variables de sesión</li><li>[ session_destroy() ] Destruye la sesión</li></ul>",
+		"mandato"		:	"<ul><li>Guardar los datos del formulario en ( $_SESSION )</li><li>Mostrar estos datos en el archivo ( sesion.php )</li><li>Crear un botón en el archivo ( sesion.php ) que elimine la sesión</li></ul>",
+		"archivos"		:	[
+								{
+									"nombre":	"index.php",
+									"codigo":	"language-php language-markup"
+								},
+								{
+									"nombre":	"sesion.php",
+									"codigo":	"language-php language-markup"
+								}
+							],
+		"cargar"		:	"index.php"
+	}
+
+]

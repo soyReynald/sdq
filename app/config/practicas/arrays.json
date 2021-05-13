@@ -1,0 +1,49 @@
+[
+
+	{
+		"numero"		:	1,
+		"url"			:	"arreglos",
+		"titulo"		:	"Contando elementos",
+		"descripcion"	:	"¿Cómo sabemos cuántos elementos tiene un arreglo (array)?",
+		"tip"			:	"Con la función [ count($array) ] podemos saber cuantos elementos tiene un arreglo (array).",
+		"mandato"		:	"<ul><li>Imprimer la cantidad de elementos que tiene el array $cursos</li></ul>",
+		"archivos"		:	[
+								{
+									"nombre":	"index.php",
+									"codigo":	"language-php language-markup"
+								}
+							],
+		"cargar"		:	"index.php"
+	},
+	{
+		"numero"		:	2,
+		"url"			:	"arreglos",
+		"titulo"		:	"Agregando elementos a un arreglo (array)",
+		"descripcion"	:	"¿Qué tal si queremos hacer nuestro arreglo (array) más grande?",
+		"tip"			:	"Para agregar valores a nuestro arreglo (array) lo podemos hacer de varias formas:<ul><li>Con la función [ array_push($array, $valor1, $valor2...) ]</li><li>Con ( $array[] = $valor )</li></ul>",
+		"mandato"		:	"<ul><li>Agregar 2 ( dos ) cursos más al arreglo (array) $cursos</li></ul>",
+		"archivos"		:	[
+								{
+									"nombre":	"index.php",
+									"codigo":	"language-php language-markup"
+								}
+							],
+		"cargar"		:	"index.php"
+	},
+	{
+		"numero"		:	3,
+		"url"			:	"arreglos",
+		"titulo"		:	"Buscando valores en un arreglo (array)",
+		"descripcion"	:	"Vamos a verificar si algún valor está dentro de un array.",
+		"tip"			:	"Con las funciones [ array_search($valor, $array) ] y [ in_array($valor, $array) ] podemos saber si existe un valor dentro de un ( array ). Pero con las siguientes diferencias:<ul><li>( array_search ) Si se encuentra el valor dentro del array devuelve el ( key ) de ese valor, sino devuelve ( false )</li><li>( in_array ) Si se encuantra el valor devuelve ( true ), sino devuelve ( false )</li></ul>",
+		"mandato"		:	"<ul><li>Buscar los valores 'Photoshop' y 'Cocina' en el array $cursos</li></ul>",
+		"archivos"		:	[
+								{
+									"nombre":	"index.php",
+									"codigo":	"language-php language-markup"
+								}
+							],
+		"cargar"		:	"index.php"
+	}
+
+]

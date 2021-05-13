@@ -1,0 +1,64 @@
+[
+
+	{
+		"numero"		:	1,
+		"url"			:	"while",
+		"titulo"		:	"Repetición (loop) WHILE",
+		"descripcion"	:	"El while ejecuta repetidas veces un bloque de código mientras la condición sea verdadera.",
+		"tip"			:	"Recuerda que siempre que utilices un loop debes colocar alguna condición para que se detenga. Sino creas un bucle infinito.<pre><code class=\"language-php line-numbers\">while(/* Condición */){\n# Código a repetir\n}</code></pre>",
+		"mandato"		:	"<ul><li>Imprimir los números del 1 ( uno ) al 10 ( diez ) utilizando while</li><li>Imprime todos los elementos del array $cursos utilizando while</li></ul>",
+		"archivos"		:	[
+								{
+									"nombre":	"index.php",
+									"codigo":	"language-php language-markup"
+								}
+							],
+		"cargar"		:	"index.php"
+	},
+	{
+		"numero"		:	2,
+		"url"			:	"do",
+		"titulo"		:	"Repetición (loop) DO WHILE",
+		"descripcion"	:	"El while ejecuta repetidas veces un bloque de código mientras la condición sea verdadera. La diferencia con el DO WHILE es que sin importar la condición siempre se ejecuta la primera vez.",
+		"tip"			:	"Ejemplo de [ do while ]:<pre><code class=\"language-php line-numbers\">do {\n# Código a repetir\n} while(/* Condición */);</code></pre>",
+		"mandato"		:	"<ul><li>Imprimir los números del 1 ( uno ) al 10 ( diez ) utilizando do while</li></ul>",
+		"archivos"		:	[
+								{
+									"nombre":	"index.php",
+									"codigo":	"language-php language-markup"
+								}
+							],
+		"cargar"		:	"index.php"
+	},
+	{
+		"numero"		:	3,
+		"url"			:	"for",
+		"titulo"		:	"Repetición (loop) FOR",
+		"descripcion"	:	"El for ejecuta un bloque de código un número específico de veces.",
+		"tip"			:	"Con [ for ] podemos iterar array númericos muy fácilmente.<pre><code class=\"language-php line-numbers\">for($i = 0; $i < $cantidad; $i++){\n# Código a repetir\n}</code></pre>",
+		"mandato"		:	"<ul><li>Imprime todos los elementos del array $cursos utilizando for</li></ul>",
+		"archivos"		:	[
+								{
+									"nombre":	"index.php",
+									"codigo":	"language-php language-markup"
+								}
+							],
+		"cargar"		:	"index.php"
+	},
+	{
+		"numero"		:	4,
+		"url"			:	"foreach",
+		"titulo"		:	"Repetición (loop) FOREACH",
+		"descripcion"	:	"El foreach solo trabaja con array. Repite el código por cada elemento del array dado.",
+		"tip"			:	"El foreach es muy bueno para iterar array asociativos y array de objetos.<pre><code class=\"language-php line-numbers\">foreach($array as $indice => $item){\n# Código a repetir por cada elemento\n}</code></pre>",
+		"mandato"		:	"<ul><li>Imprimir los nombres y apellidos del array $empleados como se muestra en la imagen</li></ul><img src='../images/loop.jpg'>",
+		"archivos"		:	[
+								{
+									"nombre":	"index.php",
+									"codigo":	"language-php language-markup"
+								}
+							],
+		"cargar"		:	"index.php"
+	}
+
+]

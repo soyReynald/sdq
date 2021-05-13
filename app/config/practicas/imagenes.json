@@ -1,0 +1,34 @@
+[
+
+	{
+		"numero"		:	1,
+		"url"			:	"resize",
+		"titulo"		:	"Cambiando el tamaño de las imágenes",
+		"descripcion"	:	"Veremos como modificar el tamaño de las imágenes por PHP.",
+		"tip"			:	"Algunas funciones que debes conocer:<ul><li>[ getimagesize($archivo) ] Devuelve detalles de la imagen, entre ellos el ancho y alto.</li><li>[ imagecreatetruecolor($ancho, $alto) ] Crea una imagen nueva.</li><li>[ imagecreatefromjpeg($archivo_jpg) ] Crea una imagen a partir de un ( JPG )</li><li>[ imagecreatefrompng($archivo_png) ] Crea una imagen a partir de un ( PNG )</li><li>También existen otras como [ imagecreatefromgif, imagecreatefrombmp, imagecreatefromwebp ] etc.</li><li>[ imagecopyresized($destino, $origen, $destino_x, $destino_y, $origen_x, $origen_y, $destino_ancho, $destino_alto, $origen_ancho, $origen_alto) ] Cambia el tamaño de la imagen ( $origen ) a la ( $destino )</li><li>[ imagejpeg($imagen, $archivo_destino, $calidad) ] Guarda una imagen como ( JPG )</li><li>También existen otras como [ imagepng, imagebmp, imagegif ], etc.</li></ul>",
+		"mandato"		:	"<ul><li>Crear un formulario donde se pueda subir imágenes de tipo [ jpg, gif y png ].</li><li>Este debe tener dos campos para colocar el nuevo ( ancho ) y ( alto ), puede ser en pixel o en pocentaje</li><li>Las imágenes nuevas deben quedar en la carpeta ( img )</li></ul>",
+		"archivos"		:	[
+								{
+									"nombre":	"index.php",
+									"codigo":	"language-php language-markup"
+								}
+							],
+		"cargar"		:	"index.php"
+	},
+	{
+		"numero"		:	2,
+		"url"			:	"crop",
+		"titulo"		:	"Recortando imágenes",
+		"descripcion"	:	"En esta parte vamos a recortar ( crop ) imágenes utilizando PHP.",
+		"tip"			:	"Para recortar una imagen básicamente necesitamos el ( x, y, ancho y alto ) del área en la imagen a recortar. Algunas herramientas que puedes utilizar para obtener esto de forma dinámica son:<ul><li>https://github.com/tapmodo/Jcrop</li><li>http://deepliquid.com/content/Jcrop.html</li><li>http://jcrop.org/</li></ul>La función de ( PHP ) para recortar imágenes es [ imagecopyresampled($imagen_destino, $imagen_origen, $destino_x, $destino_y, $origen_x, $origen_y, $destino_ancho, $destino_alto, $origen_ancho, $origen_alto) ]. Es muy probable que debas utilizar funciones de la práctica de ( resize ).",
+		"mandato"		:	"<ul><li>Crear un formulario donde se pueda subir imágenes de tipo [ jpg, gif y png ].</li><li>Luego de que suba la imagen proporcionar alguna forma de recorte, puede utilizar cualquiera de las herramientas de recorte ( crop ) mostradas en la parte superior</li><li>Las imágenes nuevas recortadas deben quedar en la carpeta ( img )</li></ul>",
+		"archivos"		:	[
+								{
+									"nombre":	"index.php",
+									"codigo":	"language-php language-markup"
+								}
+							],
+		"cargar"		:	"index.php"
+	}
+
+]

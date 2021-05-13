@@ -1,0 +1,49 @@
+[
+
+	{
+		"numero"		:	1,
+		"url"			:	"like",
+		"titulo"		:	"Buscando con LIKE",
+		"descripcion"	:	"Vamos a hacer búsquedas utilizando LIKE.",
+		"tip"			:	"Para hacer búsquedas con [ LIKE ] debemos colocarlo en el [ SELECT ] después del [ WHERE ], así:<pre><code class=\"language-sql\">SELECT * FROM tabla WHERE campo LIKE 'valor'</code></pre>Si queremos traer resultados sin importar la palabra que este delante o después del valor a buscar, colocamos signo de porciento [ % ], de esta manera: [ LIKE '%valor%' ].",
+		"mandato"		:	"<ul><li>Hacer que se pueda buscar por [ titulo ], [ director ] y [ protagonista ] en la tabla [ peliculas ]. Utilizando el formulario de búsqueda</li></ul>",
+		"archivos"		:	[
+								{
+									"nombre":	"index.php",
+									"codigo":	"language-php language-markup"
+								}
+							],
+		"cargar"		:	"index.php"
+	},
+	{
+		"numero"		:	2,
+		"url"			:	"match",
+		"titulo"		:	"Buscando con MATCH AGAINST",
+		"descripcion"	:	"Haciendo búsquedas utilizando índice <i>fulltext</i>.",
+		"tip"			:	"Recuerda que para hacer búsquedas con [ MATCH AGAINST ] los campos de la tabla en los cuales se realizará la búsqueda deben estar combinando como índice [ fulltext ]. Para esto debes crear un índice nuevo en la tabla de tipo [ fulltext ] agregando los campos por los cuales quieres hacer dicha búsqueda. Además, el motor de dicha tabla debe ser [ MyISAM ]. La sintaxis de este tipo de búsqueda sería así:<pre><code class=\"language-sql\">SELECT * FROM tabla WHERE MATCH(columna1, columna2) AGAINST('palabra1 palabra2 \"frase completa\"' IN BOOLEAN MODE)</code></pre>",
+		"mandato"		:	"<ul><li>Cambia el motor de la tabla [ peliculas ] de [ InnoDB ] a [ MyISAM ]</li><li>Crea un índice [ fulltext ] con las columnas [ titulo ], [ director ] y [ protagonista ]</li><li>Hacer que se pueda buscar por [ titulo ], [ director ] y [ protagonista ] en la tabla [ peliculas ]. Utilizando el formulario de búsqueda</li></ul>",
+		"archivos"		:	[
+								{
+									"nombre":	"index.php",
+									"codigo":	"language-php language-markup"
+								}
+							],
+		"cargar"		:	"index.php"
+	},
+	{
+		"numero"		:	3,
+		"url"			:	"paginacion",
+		"titulo"		:	"Paginando resultados",
+		"descripcion"	:	"Cuando tenemos muchos registros y no queremos mostrar una lista de registro muy larga podemos usar paginación para mostrar los resultados de la consulta en distintas páginas.",
+		"tip"			:	"Cosas que debemos recordar:<pre><code class=\"language-php line-numbers\">$tamanoPagina = 10;\n$pagina = $_GET['pagina'];\n$inicio = ($pagina - 1) * $tamanoPagina;\n$paginasTotales = ceil($numRegistrosTotales / $tamanoPagina);</code></pre>",
+		"mandato"		:	"<ul><li>Paginar los registros de la tabla [ peliculas ] y hacer funcionar la paginación</li></ul>",
+		"archivos"		:	[
+								{
+									"nombre":	"index.php",
+									"codigo":	"language-php language-markup"
+								}
+							],
+		"cargar"		:	"index.php"
+	}
+
+]

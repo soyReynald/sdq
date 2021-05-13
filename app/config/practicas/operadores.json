@@ -1,0 +1,64 @@
+[
+
+	{
+		"numero"		:	1,
+		"url"			:	"aritmeticos",
+		"titulo"		:	"Operadores aritméticos",
+		"descripcion"	:	"Son utilizados para realizar operaciones matemáticas.",
+		"tip"			:	"Los operadores aritméticos son:<ul><li>( = ) asignación, Ej.: ( $x = $y ) asigna a $x el valor de $y</li><li>( + ) suma, Ej.: ( $x + $y ) suma $x con $y</li><li>( - ) resta, Ej.: ( $x - $y ) resta $x de $y</li><li>( * ) multiplicación, Ej.: ( $x * $y ) multiplica $x por $y</li><li>( / ) división, Ej.: ( $x / $y ) divide $x entre $y</li><li>( % ) módulo, Ej.: ( $x % $y ) divide $x entre $y pero el resultado es el residuo</li><li>( ** ) exponenciación, Ej.: ( $x ** $y ) eleva $x a $y</li><li>( ++$x ) pre-incremento, Ej.: suma 1 ( uno ) a $x y luego devuelve el valor de $x</li><li>( $x++ ) post-incremento, Ej.: devuelve el valor de $x y luego suma 1 ( uno ) a $x</li><li>( --$x ) pre-decremento, Ej.: resta 1 ( uno ) a $x y luego devuelve el valor de $x</li><li>( $x-- ) post-decremento, Ej.: devuelve el valor de $x y luego resta 1 ( uno ) a $x</li></ul>",
+		"mandato"		:	"<ul><li>Declarar la variable $d e imprimirla con la suma de $a y $b</li><li>Declarar la variable $resta e imprimirla con la resta de $d menos $c</li><li>Imprimir el residuo de la división de $x entre $y</li><li>Imprimir el resultado de elevar $x a $z</li></ul>",
+		"archivos"		:	[
+								{
+									"nombre":	"index.php",
+									"codigo":	"language-php language-markup"
+								}
+							],
+		"cargar"		:	"index.php"
+	},
+	{
+		"numero"		:	2,
+		"url"			:	"comparacion",
+		"titulo"		:	"Operadores de comparación",
+		"descripcion"	:	"Son utilizados para comparar valores. Siempre devuelven verdadero o falso.",
+		"tip"			:	"Los operadores de comparación son:<ul><li>( == ) igual, Ej.: ( $x == $y ) devuelve verdadero si $x es igual a $y</li><li>( === ) idéntico, Ej.: ( $x === $y ) devuelve verdadero si $x es idéntico a $y (Idéntico: si tienen el mismo valor y son el mismo tipo de dato)</li><li>( != ) o ( <> ) diferente, Ej.: ( $x != $y ) o ( $x <> $y ) devuelve verdadero si $x es diferente de $y</li><li>( !== ) no idéntico, Ej.: ( $x !== $y ) devuelve verdadero si $x no es idéntico a $y</li><li>( &gt; ) mayor que Ej.: ( $x &gt; $y ) devuelve verdadero si $x es mayor que $y</li><li>( &lt; ) menor que Ej.: ( $x &lt; $y ) devuelve verdadero si $x es menor que $y</li><li>( &gt; ) mayor que Ej.: ( $x &gt; $y ) devuelve verdadero si $x es mayor que $y</li><li>( &lt;= ) menor o igual que Ej.: ( $x &lt;= $y ) devuelve verdadero si $x es menor o igual que $y</li><li>( &gt;= ) mayor o igual que Ej.: ( $x &gt;= $y ) devuelve verdadero si $x es mayor o igual que $y</li></ul>",
+		"mandato"		:	"<ul><li>En la condición A comprueba que la variable $a sea menor que la variable $x</li><li>En la condición B comprueba que la variable $z sea diferente que la variable $y</li><li>En la condición C comprueba que la variable $c sea mayor o igual que la variable $b</li><li>En la condición D comprueba que la variable $b sea idéntica a la variable $z</li></ul>",
+		"archivos"		:	[
+								{
+									"nombre":	"index.php",
+									"codigo":	"language-php language-markup"
+								}
+							],
+		"cargar"		:	"index.php"
+	},
+	{
+		"numero"		:	3,
+		"url"			:	"logicos",
+		"titulo"		:	"Operadores lógicos",
+		"descripcion"	:	"Son utilizados para unir comparaciones y negar valores.",
+		"tip"			:	"Los operadores lógicos son:<ul><li>( and ) o ( && ) y, Ej.: ( $x and $y ) o ( $x && $y ) devuelve verdadero si $x y $y son verdaderos</li><li>( or ) o ( || ) o, Ej.: ( $x or $y ) o ( $x || $y ) devuelve verdadero si $x o $y es verdadero</li><li>( xor ) cualquiera, Ej.: ( $x xor $y ) devuelve verdadero si cualquiera de $x o $y son verdaderos pero no las dos</li><li>( ! ) negación, Ej.: ( !$x ) devuelve verdadero si $x no es verdadero</li></ul>",
+		"mandato"		:	"<ul><li>Modifica los valores de las variables de modo que todas las condiciones sean verdaderas</li></ul>",
+		"archivos"		:	[
+								{
+									"nombre":	"index.php",
+									"codigo":	"language-php language-markup"
+								}
+							],
+		"cargar"		:	"index.php"
+	},
+	{
+		"numero"		:	4,
+		"url"			:	"array",
+		"titulo"		:	"Operadores de arreglos (arrays)",
+		"descripcion"	:	"Con estos podemos hacer múltiples operaciones a los arreglos (arrays).",
+		"tip"			:	"Los operadores de arreglos (arrays) son:<ul><li>( + ) unión, Ej.: ( $x + $y ) une el contenido de los arreglos $x y $y. Recuerda que para utilizar este método, los índices de los elementos de los arreglos deben ser continuos en caso de ser numéricos. Si no son continuos entonces podemos utilizar la función [ array_merge($array1, $array2) ]</li><li>( == ) igualdad, Ej.: ( $x == $y ) devuelve verdadero si el array $x tiene la misma cantidad de elementos que el array $y</li><li>( === ) idéntico, Ej.: ( $x === $y ) devuelve verdadero si el array $x tiene la misma cantidad de elementos que el array $y y son del mismo tipo de datos</li><li>( != ) o ( <> ) diferente, Ej.: ( $x != $y ) o ( $x <> $y ) devuelve verdadero si el array $x no tiene la misma cantidad de elementos que el array $y</li><li>( !== ) no idéntico, Ej.: ( $x !== $y ) devuelve verdadero si el array $x no es idéntico al array $y</li></ul>",
+		"mandato"		:	"<ul><li>Une los arrays $lista y $cursos en un array nuevo utilizando la función [ array_merge ]</li><li>Une los arrays $empresa y $datosEmpresa en un array nuevo utilizando el operador ( + )</li><li>Compara que el nuevo array sea idéntico al array $completo</li></ul>",
+		"archivos"		:	[
+								{
+									"nombre":	"index.php",
+									"codigo":	"language-php language-markup"
+								}
+							],
+		"cargar"		:	"index.php"
+	}
+
+]

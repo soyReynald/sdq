@@ -1,0 +1,118 @@
+[
+
+	{
+		"numero"		:	1,
+		"url"			:	"clases",
+		"titulo"		:	"Clases",
+		"descripcion"	:	"Veremos como crear clases en PHP.",
+		"tip"			:	"Recuerda que para crear una clase en PHP, colocamos la palabra clave ( class ) delante del nombre de la clase.<pre><code class=\"language-php line-numbers\">class NombreClase {\n# Contenido de la clase\n}</code></pre>",
+		"mandato"		:	"<ul><li>Crear una clase que se llame ( Cuadrado ) en el archivo ( sample/Cuadrado.php ) que también debes crear e incluirlo o requerirlo en el archivo ( index.php )</li></ul>",
+		"archivos"		:	[
+								{
+									"nombre":	"index.php",
+									"codigo":	"language-php language-markup"
+								},
+								{
+									"nombre":	"sample/Cuadrado.php",
+									"codigo":	"language-php"
+								}
+							],
+		"cargar"		:	"index.php"
+	},
+	{
+		"numero"		:	2,
+		"url"			:	"clases",
+		"titulo"		:	"Propiedades",
+		"descripcion"	:	"Veremos como crear propiedades dentro de una clase de PHP.",
+		"tip"			:	"Las propiedades son variables que se definen dentro de la clase. Estas pueden ser ( públicas, protegidas o privadas ). Con las palabras claves ( public, protected o private ) respectivamente. Solo podemos utilizar una a la vez. Recuerda que las propiedades pueden ser estáticas colocando la palabra clave [ static ] delante de la propiedad. Las propiedades estáticas pueden ser accedidas directamente sin instanciar la clase.<pre><code class=\"language-php line-numbers\">class NombreClase {\npublic $var1 = 1;\nprotected $var2 = 2;\nprivate $var3 = 3;\nstatic $var4 = 4; \n}</code></pre>",
+		"mandato"		:	"<ul><li>Crear 2 ( dos ) propiedades ( protegidas ) en la clase ( Cuadrado ) que tengan valor de ( 5 ) por defecto. Una llamada ( $ancho ) y otra ( $alto )</li></ul>",
+		"archivos"		:	[
+								{
+									"nombre":	"index.php",
+									"codigo":	"language-php language-markup"
+								},
+								{
+									"nombre":	"sample/Cuadrado.php",
+									"codigo":	"language-php"
+								}
+							],
+		"cargar"		:	"index.php"
+	},
+	{
+		"numero"		:	3,
+		"url"			:	"clases",
+		"titulo"		:	"Métodos",
+		"descripcion"	:	"Creando métodos a nuestras clases en PHP.",
+		"tip"			:	"Al igual que las propiedades, los métodos de las clases pueden ser ( públicos, protegidos o privados ). Para instanciar una clase utilizamos la palabra clave ( new ) y después el nombre de la clase. Recuerda que los métodos pueden ser estáticos colocando la palabra clave [ static ] delante de los mismos. Los métodos estáticos pueden ser accedidos directamente sin instanciar la clase.<pre><code class=\"language-php line-numbers\">class NombreClase {\npublic function funcionPublica(){... # Se puede llamar desde cualquier lugar\nprotected function funcionProtegida(){... # Se puede llamar desde la misma clase o una clase hija\nprivate function funcionPrivada(){... # Solo se puede llamar desde la misma clase\nstatic function funcionEstatica(){... # Se puede llamar desde fuera sin necesidad de instanciar la clase\n}</code></pre>",
+		"mandato"		:	"<ul><li>Crear tres ( 3 ) métodos a la clase ( Cuadrado )</li><li>Uno que le cambie el valor a la propiedad ( $alto )</li><li>Uno que le cambie el valor a la propiedad ( $ancho )</li><li>Otro método que dibuje un cuadrado de asteriscos ( * ) con los datos ( $ancho ) y ( $alto )</li><li>Instanciar la clase ( Cuadrado ) en el archivo ( index.php ) y hacer un cuadrado 10 x 10</li></ul>",
+		"archivos"		:	[ 
+								{
+									"nombre":	"index.php",
+									"codigo":	"language-php language-markup"
+								},
+								{
+									"nombre":	"sample/Cuadrado.php",
+									"codigo":	"language-php"
+								}
+							],
+		"cargar"		:	"index.php"
+	},
+	{
+		"numero"		:	4,
+		"url"			:	"clases",
+		"titulo"		:	"Utilizando una clase",
+		"descripcion"	:	"Utilizaremos una clase creada por otra persona.",
+		"tip"			:	"La documentación de la clase ( Calendario ) es la siguiente:<pre><code class=\"language-php line-numbers\">$cal = new Calendar;\n$cal->dibujar();</code></pre><ul><li>En el constructor de la clase se pueden pasar tres parámetros que son dos cadenas de textos: ( mes ), ( año ) y un booleano, que si es verdadero muestra los días del mes anterior y del siguiente</li><li>[ aplicarMes($mes) ] este método aplica el mes que quieres dibujar en el calendario</li><li>[ aplicarAno($ano) ] este método aplica el año que quieres dibujar en el calendario</li><li>[ mostrarOtrosDias(true) ] este método recibe un valor de verdad para mostrar los días del mes anterior y el siguiente</li><li>[ dibujar() ] este método dibuja el calendario según las propiedades asignadas</li></ul>",
+		"mandato"		:	"<ul><li>Instanciar la clase Calendario en el archivo ( index.php ) y dibujar el calendario de este mes</li></ul>",
+		"archivos"		:	[
+								{
+									"nombre":	"index.php",
+									"codigo":	"language-php language-markup"
+								},
+								{
+									"nombre":	"sample/Calendario.php",
+									"codigo":	"language-php"
+								}
+							],
+		"cargar"		:	"index.php"
+	},
+	{
+		"numero"		: 	5,
+		"url"			: 	"clases",
+		"titulo"		: 	"Namespace",
+		"descripcion"	: 	"Veremos que es el namespace y como lo utilizamos.",
+		"tip"			: 	"El [ namespace ] es utilizado para agrupar y organizar clases, además evita conflictos de clases que tengan el mismo nombre. Si quieres que una clase utilizar [ namespace ], solo debes colocar [ namespace Grupo\\Subgrupo ] antes de declarar la clase, puedes utilizar solo un grupo o los subgrupos que quieras. Para utilizar una clase que tiene [ namespace ], lo hacemos de la siguiente manera: colocamos [ Use Grupo\\Subgrupo\\Clase as Clase; ] antes de instanciar la clase o también al instanciar la clase podemos escribir: [ $instancia = new Grupo\\Subgrupo\\Clase; ]",
+		"mandato"		: 	"<ul><li>Remueve el caracter de comentario [ # ] de la clase [ Calendario ] en la línea que dice [ # namespace Fecha ]</li><li>Haz que el código dibuje el calendario sin comentar la línea [ namespace Fecha ]</li></ul>",
+		"archivos"		: 	[
+								{
+									"nombre": "index.php",
+									"codigo": "language-php language-markup"
+								},
+								{
+									"nombre": "sample/Calendario.php",
+									"codigo": "language-php"
+								}
+							],
+		"cargar"		: 	"index.php"
+	},
+	{
+		"numero"		: 	6,
+		"url"			: 	"clases",
+		"titulo"		: 	"Extendiendo clases",
+		"descripcion"	: 	"Podemos crear clases nuevas a partir de otras y extender su funcionalidad, agregando propiedades y métodos nuevos, con la ventaja de que podemos seguir utilizando las propiedades y métodos de la clase madre.",
+		"tip"			: 	"Para extender una clase debemos utilizar la palabra clave [ extends ] de la siguiente manera [ class Hijo extends Madre ]. De esta manera la clase [ Hijo ] hereda las propiedades y métodos de la clase [ Madre ].<pre><code class=\"language-php line-numbers\">class Hijo extends Madre {\n# Contenido de la clase Hijo\n}</code></pre>Recuerda que para crear una propiedad o un método estático debes utilizar la palabra clave [ static ] antes de su declaración dentro de la clase. Para utilizar una propiedad estática o un método estático no es necesario instanciar la clase, lo podemos hacer de la siguiente forma: [ Clase::$propiedad ] o [ Clase::metodo() ].",
+		"mandato"		: 	"<ul><li>Crea una clase nueva que extienda la clase [ Calendario ]</li><li>Crea en la clase nueva una propiedad estática que contenga el nombre del día de hoy</li><li>Crea en la clase nueva un método estático que retorne la cantidad de días del mes en curso</li><li>Imprime el valor de la propiedad y el método de la clase nueva</li></ul>",
+		"archivos": 		[
+								{
+									"nombre": "index.php",
+									"codigo": "language-php language-markup"
+								},
+								{
+									"nombre": "sample/Calendario.php",
+									"codigo": "language-php"
+								}
+							],
+		"cargar"		: 	"index.php"
+	}
+
+]

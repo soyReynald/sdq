@@ -1,0 +1,19 @@
+[
+
+	{
+		"numero"		:	1,
+		"url"			:	"eventos",
+		"titulo"		:	"Realizar agenda de eventos",
+		"descripcion"	:	"Vamos a realizar un calendario de eventos.",
+		"tip"			:	"Recuerda las prácticas anteriores sobre las funciones de fecha y calendario.",
+		"mandato"		:	"<ul><li>Realizar un calendario tipo agenda</li><li>El calendario debe tener botones para agregar eventos</li><li>Los eventos ya creados deben verse en el día correspondiente dentro del calendario</li><li>Al hacer click en el evento, este debe mostrar detalles del evento y la posibilidad de modificar dicho evento</li></ul>",
+		"archivos"		:	[
+								{
+									"nombre":	"index.php",
+									"codigo":	"language-php language-markup"
+								}
+							],
+		"cargar"		:	"index.php"
+	}
+
+]

@@ -1,0 +1,48 @@
+[
+
+	{
+		"numero"		:	1,
+		"url"			:	"insert",
+		"titulo"		:	"Crear ( Insert )",
+		"descripcion"	:	"Creando contenido en las tablas de la base de datos.",
+		"tip"			:	"Recuerda que para insertar datos se utiliza las palabras clave ( INSERT INTO ).<pre><code class=\"language-sql\">INSERT INTO tabla (columna1, columna2, ...) VALUES ('valor1', 'valor2', ...)</code></pre>Si la práctica no se visualiza debes modificar las variables ( 'server' ), ( 'user' ) y ( 'password' ) en el archivo ( app/config/mysql.json ).",
+		"mandato"		:	"<ul><li>Inserta un usuario en la tabla ( usuarios )</li><li>Luego inserta 3 ( tres ) usuarios simultáneamente en la tabla ( usuarios )</li></ul>",
+		"archivos"		:	[
+							],
+		"cargar"		:	"index.php"
+	},
+	{
+		"numero"		:	2,
+		"url"			:	"select",
+		"titulo"		:	"Leer ( Select )",
+		"descripcion"	:	"Obteniendo datos de las tablas de la base de datos.",
+		"tip"			:	"Para seleccionar datos se utiliza las palabras clave ( SELECT y FROM ).<pre><code class=\"language-sql\">SELECT * FROM usuarios # Selecciona todo de la tabla usuarios\nSELECT nombre, apellido FROM usuarios # Selecciona solo el nombre y el apellido de la tabla usuarios</code></pre>Otras palabras clave que se pueden utilizar en el SELECT son [ IN, JOIN, ON, WHERE, ORDER BY, GROUP BY, LIMIT ]. Si necesitas referencia de las funciones de fecha de MySQL puedes visitar este link ( https://dev.mysql.com/doc/refman/5.7/en/date-and-time-functions.html ).<br>Si la práctica no se visualiza debes modificar las variables ( 'server' ), ( 'user' ) y ( 'password' ) en el archivo ( app/config/mysql.json ).",
+		"mandato"		:	"<ul><li>Seleccionar el ( ranking, titulo, director ) solo de las películas que han ganado mejor película y ordenalas por ( ranking ) ( descendente )</li><li>Seleccionar el ( titulo, director, protagonista ) y solo el año del campo ( fecha ) de las 5 ( cinco ) películas con más nominaciones</li><li>Seleccionar las películas donde ( Elijah Wood y Tom Hanks ) han sido protagonistas y ordenalas por ( fecha ) ( ascendente )</li><li>Seleccionar ( titulo, protagonista ) de las películas del año ( 2000 ) hasta la fecha</li><li>Seleccionar ( id, ranking, titulo, fecha ) de las películas desde el ( 1990 ) hasta el ( 1999 ) que han ganado mejor película</li><li>Seleccionar el ( conteo ) de las películas de ( Christopher Nolan )</li></ul>",
+		"archivos"		:	[
+							],
+		"cargar"		:	"index.php"
+	},
+	{
+		"numero"		:	3,
+		"url"			:	"update",
+		"titulo"		:	"Actualizar ( Update )",
+		"descripcion"	:	"Cambiando datos de las tablas de la base de datos.",
+		"tip"			:	"Para cambiar los datos de las tablas se utilizan las palabras clave ( UPDATE y SET ).<pre><code class=\"language-sql\">UPDATE tabla SET columna1 = 'valor1', columna2 = 'valor2'...</code></pre>",
+		"mandato"		:	"<ul><li>Cambiar todas las películas que tienen ( nominaciones ) en 0 ( cero ) a 20 ( veinte )</li><li>Cambiar el nombre del director ( Peter Jackson ) por ( Pedro Jackson ) </li><li>Cambiar 3 ( tres ) ( titulos ) al idioma español</li></ul>",
+		"archivos"		:	[
+							],
+		"cargar"		:	"index.php"
+	},
+	{
+		"numero"		:	4,
+		"url"			:	"delete",
+		"titulo"		:	"Borrar ( Delete )",
+		"descripcion"	:	"Eliminado datos de las tablas de la base de datos.",
+		"tip"			:	"Las palabras clave para eliminar son ( DELETE FROM ). Recuerda que debes especificar con ( WHERE ) para no eliminar todo.<pre><code class=\"language-sql\">DELETE FROM tabla WHERE columnaX = 'valor'</code></pre>Si la práctica no se visualiza debes modificar las variables ( 'server' ), ( 'user' ) y ( 'password' ) en el archivo ( app/config/mysql.json ).",
+		"mandato"		:	"<ul><li>Eliminar el usuario con el ( id ) 3 ( tres )</li><li>Eliminar los usuarios con el ( id ) igual o mayor a 6 ( seis ) en un solo query</li></ul>",
+		"archivos"		:	[
+							],
+		"cargar"		:	"index.php"
+	}
+
+]

@@ -1,0 +1,42 @@
+[
+
+	{
+		"numero"		:	1,
+		"url"			:	"cuentas",
+		"titulo"		:	"Transacciones en MySQL",
+		"descripcion"	:	"Veremos cómo hacer modificaciones en múltiples tablas.",
+		"tip"			:	"Recuerda que para hacer transacciones en MySQL, debes utilizar las palabras clave [ START TRANSACTION ] y [ COMMIT ] al inicio y al final de la consulta o en su defecto las funciones [ mysqli_begin_transaction($conexion) ] y [ mysqli_commit($conexion) ]. Otras funciones que pueden ayudar en las transacciones:<ul><li>[ mysqli_multi_query($conexion, $query) ] Ejecuta una o múltiples consultas concatenadas por puntos y comas.</li><li>[ mysqli_autocommit($conexion, true || false) ] Activa o desactiva el modo 'auto-commit' en consultas para la conexión a la base de datos <i>( Solo tablas InnoDB )</i>.</li><li>[ mysqli_more_results($conexion) ] Indica si hay disponibles algún juego de resultados de alguna llamada previa a [ mysqli_multi_query() ].</li><li>[ mysqli_next_result($conexion) ] Prepara el siguiente juego de resultados de una llamada a [ mysqli_multi_query() ].</li></ul>",
+		"mandato"		:	"Importa la base de datos del archivo ( cuentas.sql ), este tiene 3 ( tres ) tablas ( clientes, cuentas, movimientos )<ul><li>Elaborar un sistema para hacer transferencias de la cuenta de un cliente a otro dejando rastro del movimiento</li><li>Elaborar una pantalla donde se pueda ver los movimientos de una cuenta</li></ul>",
+		"archivos"		:	[
+								{
+									"nombre":	"index.php",
+									"codigo":	"language-php language-markup"
+								},
+								{
+									"nombre":	"cuentas.sql",
+									"codigo":	"language-sql"
+								}
+							],
+		"cargar"		:	"index.php"
+	},
+	{
+		"numero"		: 	2,
+		"url"			: 	"storage",
+		"titulo"		: 	"<i>\"Stored Procedure\"</i> en MySQL",
+		"descripcion"	: 	"Veremos cómo podemos crear procedimiento almacenado <i>\"Stored Procedure\" en MySQL y luego utilizarlo en PHP</i>.",
+		"tip"			: 	"Para crear un procedimiento en MySQL debemos utilizar las palabras claves [ CREATE PROCEDURE ] luego el nombre del procedimiento. Si vamos a colocar parámetros deben ir dentro de paréntesis como cuando declaramos una función. Luego utilizamos las palabras claves [ BEGIN ] y [ END ] para limitar el inicio y el fin del procedimiento. A continuación, podemos ver un ejemplo:<pre><code class=\"language-sql line-numbers\">DELIMITER $$ # Es recomendable utilizar un delimitador diferente para los procedimientos, como $$, // o cualquier otro que no sea el punto y coma (;)\nCREATE PROCEDURE borrar(IN fecha datetime, IN id int(11)) # Declaración del procedimiento, pasando dos parámetros: fecha y id\nBEGIN # Inicio\nDELETE FROM articulos WHERE id_articulo = id AND fecha_articulo > fecha; # El procedimiento\nEND $$ # Finalizamos y colocamos el delimitador\nDELIMITER ; # Volvemos a colocar el delimitador original</code></pre>Para utilizar el procedimiento lo hacemos con la palabra clave [ CALL ]<pre><code class=\"language-sql\">CALL borrar(NOW(), 15);</code></pre>En caso de que no se haya creado las tablas [ productos ] e [ inventario ] de manera automática, importar la base de datos [ productos.sql ], esta contiene dichas tablas.",
+		"mandato"		: 	"En la aplicación [ MiniMarket 2.0 ] que se muestra a continuación, existe un problema de actualización en la base de datos. Como podrás ver, algunas marcas dicen: [ sold out ] mientras que el inventario tiene productos de dicha marca. Por otro lado, hay marcas que [ no ] dice: [ sold out ] y sin embargo no hay productos en inventario.<ul><li>Crear un <i>[ stored procedure ]</i> que actualice el campo que se llama [ disponible ] en la tabla [ productos ] dependiendo del campo que se llama [ cantidad ] en la tabla [ inventario ]</li></ul>",
+		"archivos"		: 	[
+								{
+									"nombre": "index.php",
+									"codigo": "language-php language-markup"
+								},
+								{
+									"nombre": "productos.sql",
+									"codigo": "language-sql"
+								}
+							],
+		"cargar"		: 	"index.php"
+	}
+
+]

@@ -1,0 +1,42 @@
+[
+
+	{
+		"numero"		:	1,
+		"url"			:	"upload",
+		"titulo"		:	"Subiendo y controlando archivos",
+		"descripcion"	:	"Veremos como subir y controlar archivos por tamaño y por tipo.",
+		"tip"			:	"Para subir archivos debes tener presente lo siguiente:<ul><li>En el form siempre debes colocar el atributo ( enctype=&quot;multipart/form-data&quot; ) esto permite enviar archivos en la data del form</li><li>Los datos del archivo los recibimos con la variable ( $_FILES )</li><li>( $_FILES['file']['name'] ) nos da el nombre del archivo</li><li>( $_FILES['file']['tmp_name'] ) nos da la ruta ( temporal ) del archivo físico que subió</li><li>( $_FILES['file']['size'] ) nos da el tamaño del archivo en bytes</li><li>( $_FILES['file']['type'] ) nos da el tipo del archivo segun la extensión</li><li>[ is_uploaded_file($archivo) ] retorna verdadero si el archivo subio correctamente donde $archivo es el ( $_FILES['file']['tmp_name'] )</li><li>[ move_uploaded_file($fuente, $destino) ] mueve el archivo desde la $fuente a su $destino</li><li>[ file_exists($archivo) ] retorna verdadero si el $archivo existe, falso sino</li></ul>",
+		"mandato"		:	"<ul><li>Crear un formulario para subir archivos y enviar los datos a ( subir.php )</li><li>Controlar que solo se pueda subir archivos de imágenes ( gif, jpg o png ) y archivos ( pdf )</li><li>Que las imágenes suban a las carpeta ( img ) y los pdf a la carpeta ( pdf )</li><li>Que las imágenes no pasen de ( 150KB )</li></ul>",
+		"archivos"		:	[
+								{
+									"nombre":	"index.php",
+									"codigo":	"language-php language-markup"
+								},
+								{
+									"nombre":	"subir.php",
+									"codigo":	"language-php language-markup"
+								}
+							],
+		"cargar"		:	"index.php"
+	},
+	{
+		"numero": 2,
+		"url": "upload",
+		"titulo": "Listando archivos",
+		"descripcion": "Si queremos listar archivos de una carpeta, podemos hacerlo con la función glob.",
+		"tip": "Para utilizar la función [ glob ] lo hacemos así, si queremos por ejemplo buscar todos los archivos con la extensión [ .txt ] que se encuentren dentro de la carpeta [ textos ] sería [ glob('textos/*.txt') ]. Recuerda que la función [ glob ] devuelve un array con el listado de archivos encontrados según el patrón introducido.",
+		"mandato": "<ul><li>Haz un listado de los archivos [ *.pdf ] que existen en la carpeta [ pdf ]</li><li>Haz un listado de los archivos [ *.jpg, *.gif, *.png ] que existen en la carpeta [ img ]</li></ul>",
+		"archivos": [
+			{
+				"nombre": "index.php",
+				"codigo": "language-php language-markup"
+			},
+			{
+				"nombre": "subir.php",
+				"codigo": "language-php language-markup"
+			}
+		],
+		"cargar": "index.php"
+	}
+
+]

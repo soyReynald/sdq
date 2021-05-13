@@ -1,0 +1,49 @@
+[
+
+	{
+		"numero"		:	1,
+		"url"			:	"cuadrado",
+		"titulo"		:	"Cuadrado de asteriscos 10 x 10",
+		"descripcion"	:	"Con las funciones podemos personalizar muchos códigos.",
+		"tip"			:	"Siempre que vamos a crear una función debemos escribir la palabra clave ( function ) delante del nombre de la función.<pre><code class=\"language-php line-numbers\">function nombreFuncion(){\n#Código de la función\n}</code></pre>",
+		"mandato"		:	"<ul><li>Crear una función que dibuje un cuadrado de asteriscos de 10 x 10</li></ul>",
+		"archivos"		:	[
+								{
+									"nombre":	"index.php",
+									"codigo":	"language-php language-markup"
+								}
+							],
+		"cargar"		:	"index.php"
+	},
+	{
+		"numero"		:	2,
+		"url"			:	"cuadrado",
+		"titulo"		:	"Cuadrado de asteriscos personalizable",
+		"descripcion"	:	"Enviando parámetros a las funciones podemos personalizar aun más nuestros códigos.",
+		"tip"			:	"Siempre que creamos una función debemos colocar paréntesis ( () ) después del nombre de la función incluso si esta no requiere parámetros.<pre><code class=\"language-php line-numbers\">function nombreFuncion($parametroA, $parametroB){\n#Código de la función\n}</code></pre>",
+		"mandato"		:	"<ul><li>Modificar la función que creamos anteriormente, haciendo que reciba como parámetros dos números cualquiera, uno para ancho y otro para alto</li></ul>",
+		"archivos"		:	[
+								{
+									"nombre":	"index.php",
+									"codigo":	"language-php language-markup"
+								}
+							],
+		"cargar"		:	"index.php"
+	},
+	{
+		"numero"		:	3,
+		"url"			:	"retornar",
+		"titulo"		:	"Función que retorna valores",
+		"descripcion"	:	"Podemos hacer que el mismo llamado de las funciones se convierta en un valor.",
+		"tip"			:	"Para hacer que las funciones retornen un valor, solo tenemos que colocar la palabra clave ( return ) antes del valor que queremos retornar. Esto lo podemos hacer en cualquier parte de la función y podemos colocar cualquier valor para retornar.<pre><code class=\"language-php line-numbers\">function nombreFuncion(){\n#Código de la función\nreturn \"Dato a retornar\"; # Aquí se coloca el dato que se quiere retornar\n}</code></pre>",
+		"mandato"		:	"<ul><li>Crear una función que retorne el resultado de sumar 2 ( dos ) números enviados como parámetros</li><li>Crear otra función que retorne verdadero si la división entre 2 ( dos ) números dados como parámetros es exacta</li></ul>",
+		"archivos"		:	[
+								{
+									"nombre":	"index.php",
+									"codigo":	"language-php language-markup"
+								}
+							],
+		"cargar"		:	"index.php"
+	}
+
+]

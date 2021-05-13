@@ -1,0 +1,76 @@
+[
+
+	{
+		"numero"		:	1,
+		"url"			:	"xml",
+		"titulo"		:	"Leyendo archivos en formato XML",
+		"descripcion"	:	"Como leer y utilizar los datos de un archivo XML.",
+		"tip"			:	"Para cargar un archivo XML en PHP, se hace con la función [ simplexml_load_file($archivo) ], si el archivo carga correctamente esto retorna un ( objeto ) que podemos utilizar como data de PHP.",
+		"mandato"		:	"<ul><li>Leer la data del archivo ( data/canciones.xml ) y mostrarla en el archivo ( index.php ) como se ve en la imagen<img src='../images/canciones.jpg'></li></ul>",
+		"archivos"		:	[
+								{
+									"nombre":	"index.php",
+									"codigo":	"language-php language-markup"
+								},
+								{
+									"nombre":	"data/canciones.xml",
+									"codigo":	"language-markup"
+								}
+							],
+		"cargar"		:	"index.php"
+	},
+	{
+		"numero"		:	2,
+		"url"			:	"json",
+		"titulo"		:	"Leyendo JSON",
+		"descripcion"	:	"Veremos como leer y utilizar datos desde un archivo JSON.",
+		"tip"			:	"Con la función [ file_get_contents($archivo) ] se puede leer el contenido de un archivo como cadena de texto ( string ). Con la función [ json_decode($string, $boolean [opcional]) ] se puede decodificar una cadena de texto en formato ( JSON ) a objeto o array asociativo de PHP. En el caso de que el segundo parámetro ( opcional ) sea ( true ) la función devolverá la data como array asociativo. Si es ( false ) o no se coloca, entonces la devolverá como objeto. Y [ json_encode($data) ] puede convertir un array u objeto a formato JSON.<pre><code class=\"language-php line-numbers\">$archivo = file_get_contents('url/archivo.json');\n$json = json_decode($archivo);</code></pre>",
+		"mandato"		:	"<ul><li>Leer la data del archivo ( data/productos.json ) y mostrarla en el archivo ( index.php ) como se ve en la imagen<img src='../images/productos.jpg'></li></ul>",
+		"archivos"		:	[
+								{
+									"nombre":	"index.php",
+									"codigo":	"language-php language-markup"
+								},
+								{
+									"nombre":	"data/productos.json",
+									"codigo":	"language-json"
+								}
+							],
+		"cargar"		:	"index.php"
+	},
+	{
+		"numero"		:	3,
+		"url"			:	"xml_api",
+		"titulo"		:	"Leyendo web services (XML)",
+		"descripcion"	:	"Vamos a leer un web service en formato XML desde un API online.",
+		"tip"			:	"Para cargar XML desde una URL es del mismo modo, con la función [ simplexml_load_file($url) ].",
+		"mandato"		:	"<ul><li>Desplegar las noticias de este API ( https://www.diariolibre.com/rss/portada.xml ) como se muestra en la imagen: <img src='../images/news_xml.jpg' ></li><li>Hacer que los botones ( 'Ver más...' ) lleven al url de la noticia</li></ul>",
+		"archivos"		:	[
+								{
+									"nombre":	"index.php",
+									"codigo":	"language-php language-markup"
+								}
+							],
+		"cargar"		:	"index.php"
+	},
+	{
+		"numero"		:	4,
+		"url"			:	"json_api",
+		"titulo"		:	"Leyendo web services (JSON)",
+		"descripcion"	:	"Vamos a leer un webservice en formato JSON desde un API online.",
+		"tip"			:	"Para leer un ( API ) en ( JSON ) se hacen con las mismas funciones [ file_get_contents($url) ] y [ json_decode($string) ].<br>Si tienes problemas con la URL puedes utilizar el archivo que se llama [ forecast.json ] que está en la carpeta [ weather ].<br>También puedes utilizar esta url para cargar los iconos [ http://openweathermap.org/img/w/[icon].png ], si tienes problemas cargando esta url, existe una copia de estos en la carpeta [ img ].",
+		"mandato"		:	"<ul><li>Utilizando el API de Open Weather Map ( https://openweathermap.org/ )</li><li>Url del clima de la ciudad de Santo Domingo:<br>( http://api.openweathermap.org/data/2.5/forecast?q=santo%20domingo,do&units=metric&APPID=ec44c1fd21bdb2d15e1a125b8d096e62 )</li><li>Lograr algo parecido a lo que se ve en la imagen:<br><img src='../images/forecast.jpg'></li></ul>",
+		"archivos"		:	[
+								{
+									"nombre":	"index.php",
+									"codigo":	"language-php language-markup"
+								},
+								{
+									"nombre": "weather/forecast.json",
+									"codigo": "language-json"
+								}
+							],
+		"cargar"		:	"index.php"
+	}
+
+]
